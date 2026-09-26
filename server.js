@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = Number(process.env.PORT || 4000);
 
-const ADMIN_CREDENTIALS = [
+const DEFAULT_ADMIN_CREDENTIALS = [
   { email: 'admin@canoe.com', password: '1111' },
   { email: 'a@gmail.com', password: '1111' },
 ];
@@ -18,6 +18,7 @@ const makeDefaultStore = () => ({
   categories: [],
   menu: [],
   comments: [],
+  adminCredentials: DEFAULT_ADMIN_CREDENTIALS,
 });
 
 const ensureStore = () => {
@@ -35,7 +36,7 @@ const writeStore = (nextStore) => {
   fs.writeFileSync(dataFile, JSON.stringify(nextStore, null, 2));
 };
 
-const normalizeCategory = (value) => {
+const canonicalCategoryName = (value) => {
   const next = String(value || '').trim();
   if (!next) {
     return '';
@@ -45,18 +46,19 @@ const normalizeCategory = (value) => {
 
   if (normalized.includes(' / ')) {
     const parts = normalized.split(' / ').map((part) => part.trim()).filter(Boolean);
-    const englishCandidate = [...parts].reverse().find((part) => /[A-Za-z]/.test(part));
-    return (englishCandidate || parts[parts.length - 1] || normalized).replace(/\s+/g, ' ');
-  }
-
-  const words = normalized.split(/\s+/).filter(Boolean);
-  const englishWords = words.filter((part) => /[A-Za-z]/.test(part));
-
-  if (englishWords.length) {
-    return englishWords.join(' ');
+    return (parts.at(-1) || normalized).replace(/\s+/g, ' ');
   }
 
   return normalized;
+};
+
+const normalizeCategory = (value) => {
+  const next = String(value || '').trim();
+  if (!next) {
+    return '';
+  }
+
+  return next.replace(/\s+/g, ' ');
 };
 
 const splitMenuName = (value) => {
@@ -130,14 +132,23 @@ const readStore = () => {
   }
 
   const rawCategories = Array.isArray(parsed.categories) ? parsed.categories : [];
-  const categories = [...new Set(rawCategories
-    .map((category) => normalizeCategory(category))
-    .filter((category) => category && category !== 'All dishes'))];
+  const categories = [...new Map(
+    rawCategories
+      .map((category) => {
+        const normalized = normalizeCategory(category);
+        return normalized ? [canonicalCategoryName(normalized), normalized] : null;
+      })
+      .filter(Boolean)
+      .filter(([key]) => key && key !== 'All dishes')
+  ).values()];
 
   return {
     categories,
     menu: (Array.isArray(parsed.menu) ? parsed.menu : []).map((item) => normalizeMenuItem({ ...item, category: normalizeCategory(item?.category) })),
     comments: Array.isArray(parsed.comments) ? parsed.comments : [],
+    adminCredentials: Array.isArray(parsed.adminCredentials) && parsed.adminCredentials.length
+      ? parsed.adminCredentials
+      : DEFAULT_ADMIN_CREDENTIALS,
   };
 };
 
@@ -166,7 +177,8 @@ app.post('/api/categories', (request, response) => {
   }
 
   const store = readStore();
-  if (store.categories.includes(name)) {
+  const key = canonicalCategoryName(name);
+  if (store.categories.some((category) => canonicalCategoryName(category) === key)) {
     return response.json({ categories: store.categories, message: 'Category already exists.' });
   }
 
@@ -188,7 +200,16 @@ app.post('/api/categories/reorder', (request, response) => {
   }
 
   const store = readStore();
-  const nextCategories = [...new Set([...normalizedOrder, ...store.categories.filter((category) => !normalizedOrder.includes(category))])];
+  const seen = new Set();
+  const nextCategories = [...normalizedOrder, ...store.categories.filter((category) => !normalizedOrder.some((item) => canonicalCategoryName(item) === canonicalCategoryName(category)))]
+    .filter((category) => {
+      const key = canonicalCategoryName(category);
+      if (!key || seen.has(key)) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
 
   const nextStore = { ...store, categories: nextCategories };
   writeStore(nextStore);
@@ -199,16 +220,16 @@ app.post('/api/categories/reorder', (request, response) => {
 app.delete('/api/categories/:name', (request, response) => {
   const categoryName = decodeURIComponent(request.params.name);
   const store = readStore();
-  const normalizedCategory = normalizeCategory(categoryName);
+  const normalizedCategory = canonicalCategoryName(categoryName);
 
   if (!normalizedCategory) {
     return response.status(400).json({ message: 'Category name is required.' });
   }
 
-  const remainingItems = store.menu.filter((item) => item.category !== normalizedCategory);
+  const remainingItems = store.menu.filter((item) => canonicalCategoryName(item.category) !== normalizedCategory);
   const nextStore = {
     ...store,
-    categories: store.categories.filter((category) => category !== normalizedCategory),
+    categories: store.categories.filter((category) => canonicalCategoryName(category) !== normalizedCategory),
     menu: remainingItems,
   };
   writeStore(nextStore);
@@ -383,14 +404,52 @@ app.delete('/api/comments/:id', (request, response) => {
 app.post('/api/admin/login', (request, response) => {
   const email = String(request.body?.email || '').trim();
   const password = String(request.body?.password || '');
+  const store = readStore();
 
-  const match = ADMIN_CREDENTIALS.some((credential) => credential.email === email && credential.password === password);
+  const match = store.adminCredentials.some((credential) => credential.email === email && credential.password === password);
 
   if (!match) {
     return response.status(401).json({ message: 'Incorrect email or password.' });
   }
 
   return response.json({ success: true, message: 'Admin login successful.' });
+});
+
+app.post('/api/admin/change-credentials', (request, response) => {
+  const currentEmail = String(request.body?.currentEmail || '').trim();
+  const currentPassword = String(request.body?.currentPassword || '');
+  const newEmail = String(request.body?.newEmail || '').trim();
+  const newPassword = String(request.body?.newPassword || '');
+  const store = readStore();
+  const credentialIndex = store.adminCredentials.findIndex((credential) => credential.email === currentEmail && credential.password === currentPassword);
+
+  if (credentialIndex < 0) {
+    return response.status(401).json({ message: 'Current email or password is incorrect.' });
+  }
+
+  if (!newEmail || !newPassword) {
+    return response.status(400).json({ message: 'New email and password are required.' });
+  }
+
+  if (!/^\S+@\S+\.\S+$/.test(newEmail)) {
+    return response.status(400).json({ message: 'Enter a valid email address.' });
+  }
+
+  if (newPassword.length < 4) {
+    return response.status(400).json({ message: 'Password must be at least 4 characters.' });
+  }
+
+  const emailInUse = store.adminCredentials.some((credential, index) => index !== credentialIndex && credential.email === newEmail);
+  if (emailInUse) {
+    return response.status(409).json({ message: 'That email is already in use.' });
+  }
+
+  const adminCredentials = store.adminCredentials.map((credential, index) => (
+    index === credentialIndex ? { email: newEmail, password: newPassword } : credential
+  ));
+  writeStore({ ...store, adminCredentials });
+
+  return response.json({ success: true, message: 'Admin credentials updated successfully.' });
 });
 
 app.listen(PORT, () => {
