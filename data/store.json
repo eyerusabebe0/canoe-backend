@@ -19,15 +19,2237 @@
     "ካኖ ስፔሻል ኬክ / Canoe Special Cake",
     "ካኖ ስፔሻል ቶርታ ኬክ / Canoe Special Torta Cake",
     "ቶርታ ኬክ / Torta Cake",
-    "ኩኪስ / Cookies"
+    "ኩኪስ / Cookies",
+    "ኬክ በካፕ / Dessert Cup",
+    "ኬክ / Cake",
+    "ኬክ / Pastry Treats",
+    "ስፔሻል ቶርታ / Special Torta",
+    "ፎንዳንት ኬክ / Fondant Cake",
+    "ኬክ በኪሎ / Cake by Weight"
   ],
-  "menu": [],
+  "menu": [
+    {
+      "id": "item-1",
+      "name": "Egg Sandwich",
+      "amharicName": "እንቁላል ሳንድዊች",
+      "category": "ቁርስ / Breakfast",
+      "price": "260",
+      "description": "",
+      "order": 0
+    },
+    {
+      "id": "item-2",
+      "name": "Special Egg Sandwich",
+      "amharicName": "ስፔሻል እንቁላል ሳንድዊች",
+      "category": "ቁርስ / Breakfast",
+      "price": "360",
+      "description": "",
+      "order": 1
+    },
+    {
+      "id": "item-3",
+      "name": "Egg Firfir",
+      "amharicName": "እንቁላል ፍርፍር",
+      "category": "ቁርስ / Breakfast",
+      "price": "270",
+      "description": "",
+      "order": 2
+    },
+    {
+      "id": "item-4",
+      "name": "Egg Silis",
+      "amharicName": "እንቁላል ስልስ",
+      "category": "ቁርስ / Breakfast",
+      "price": "275",
+      "description": "",
+      "order": 3
+    },
+    {
+      "id": "item-5",
+      "name": "Egg with Meat",
+      "amharicName": "እንቁላል በስጋ",
+      "category": "ቁርስ / Breakfast",
+      "price": "345",
+      "description": "",
+      "order": 4
+    },
+    {
+      "id": "item-6",
+      "name": "Pancake",
+      "amharicName": "ፓንኬክ",
+      "category": "ቁርስ / Breakfast",
+      "price": "220",
+      "description": "",
+      "order": 5
+    },
+    {
+      "id": "item-7",
+      "name": "Omlet",
+      "amharicName": "ኦምሌት",
+      "category": "ቁርስ / Breakfast",
+      "price": "225",
+      "description": "",
+      "order": 6
+    },
+    {
+      "id": "item-8",
+      "name": "Special Omlet",
+      "amharicName": "ስፔሻል ኦምሌት",
+      "category": "ቁርስ / Breakfast",
+      "price": "290",
+      "description": "",
+      "order": 7
+    },
+    {
+      "id": "item-9",
+      "name": "Fetira",
+      "amharicName": "ፈቲራ",
+      "category": "ቁርስ / Breakfast",
+      "price": "220",
+      "description": "",
+      "order": 8
+    },
+    {
+      "id": "item-10",
+      "name": "Special Fetira",
+      "amharicName": "ስፔሻል ፈቲራ",
+      "category": "ቁርስ / Breakfast",
+      "price": "330",
+      "description": "",
+      "order": 9
+    },
+    {
+      "id": "item-11",
+      "name": "Chechebsa",
+      "amharicName": "ጨጨብሳ",
+      "category": "ቁርስ / Breakfast",
+      "price": "220",
+      "description": "",
+      "order": 10
+    },
+    {
+      "id": "item-12",
+      "name": "Special Chechebsa",
+      "amharicName": "ስፔሻል ጨጨብሳ",
+      "category": "ቁርስ / Breakfast",
+      "price": "290",
+      "description": "",
+      "order": 11
+    },
+    {
+      "id": "item-13",
+      "name": "Teff Chechebsa",
+      "amharicName": "የጤፍ ጨጨብሳ",
+      "category": "ቁርስ / Breakfast",
+      "price": "230",
+      "description": "",
+      "order": 12
+    },
+    {
+      "id": "item-14",
+      "name": "S.Teff Chechebsa",
+      "amharicName": "ስፔሻል የጤፍ ጨጨብሳ",
+      "category": "ቁርስ / Breakfast",
+      "price": "300",
+      "description": "",
+      "order": 13
+    },
+    {
+      "id": "item-15",
+      "name": "Ful",
+      "amharicName": "ፉል",
+      "category": "ቁርስ / Breakfast",
+      "price": "200",
+      "description": "",
+      "order": 14
+    },
+    {
+      "id": "item-16",
+      "name": "Special Ful",
+      "amharicName": "ስፔሻል ፉል",
+      "category": "ቁርስ / Breakfast",
+      "price": "260",
+      "description": "",
+      "order": 15
+    },
+    {
+      "id": "item-17",
+      "name": "Avocado Ful",
+      "amharicName": "አቮካዶ ፉል",
+      "category": "ቁርስ / Breakfast",
+      "price": "210",
+      "description": "",
+      "order": 16
+    },
+    {
+      "id": "item-18",
+      "name": "Pasta with Egg",
+      "amharicName": "ፓስታ በእንቁላል",
+      "category": "ቁርስ / Breakfast",
+      "price": "300",
+      "description": "",
+      "order": 17
+    },
+    {
+      "id": "item-19",
+      "name": "Rice With Egg",
+      "amharicName": "ሩዝ በእንቁላል",
+      "category": "ቁርስ / Breakfast",
+      "price": "300",
+      "description": "",
+      "order": 18
+    },
+    {
+      "id": "item-20",
+      "name": "Vegitable With Bread",
+      "amharicName": "አትክልት በዳቦ",
+      "category": "ቁርስ / Breakfast",
+      "price": "200",
+      "description": "",
+      "order": 19
+    },
+    {
+      "id": "item-21",
+      "name": "Frinch Tost",
+      "amharicName": "ፍሬንች ቶስት",
+      "category": "ቁርስ / Breakfast",
+      "price": "210",
+      "description": "",
+      "order": 20
+    },
+    {
+      "id": "item-22",
+      "name": "Special Nashf",
+      "amharicName": "ስፔሻል ናሽፍ",
+      "category": "ቁርስ / Breakfast",
+      "price": "300",
+      "description": "",
+      "order": 21
+    },
+    {
+      "id": "item-23",
+      "name": "Regular Nashf",
+      "amharicName": "የመደበኛ ናሽፍ",
+      "category": "ቁርስ / Breakfast",
+      "price": "230",
+      "description": "",
+      "order": 22
+    },
+    {
+      "id": "seed-42b199a3a375",
+      "name": "Fasting Cane Special",
+      "amharicName": "የፆም ካኔ ስፔሻል",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "1100",
+      "description": "",
+      "order": 23
+    },
+    {
+      "id": "seed-09ba1418b075",
+      "name": "Special Fasting Firfir",
+      "amharicName": "ስፔሻል የፆም ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "260",
+      "description": "",
+      "order": 24
+    },
+    {
+      "id": "seed-0486411bf510",
+      "name": "Dirkosh Firfir",
+      "amharicName": "ድርቆሽ ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "240",
+      "description": "",
+      "order": 25
+    },
+    {
+      "id": "seed-ec43c9962167",
+      "name": "Gomen Kitifo",
+      "amharicName": "ጎመን ክትፎ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "270",
+      "description": "",
+      "order": 26
+    },
+    {
+      "id": "seed-42978c62d079",
+      "name": "Spageti With Silis",
+      "amharicName": "ፓስታ በስልስ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "260",
+      "description": "",
+      "order": 27
+    },
+    {
+      "id": "seed-111e7b93d7e7",
+      "name": "Spageti With Vegitable",
+      "amharicName": "ፓስታ በአትክልት",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "250",
+      "description": "",
+      "order": 28
+    },
+    {
+      "id": "seed-cf98e5eb8ae4",
+      "name": "Rice With Vegitable",
+      "amharicName": "ሩዝ በአትክልት",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "250",
+      "description": "",
+      "order": 29
+    },
+    {
+      "id": "seed-3666d728bd72",
+      "name": "Potato Firfir",
+      "amharicName": "ድንች ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "250",
+      "description": "",
+      "order": 30
+    },
+    {
+      "id": "seed-e83a8045139a",
+      "name": "Special Potato Firfir",
+      "amharicName": "ስፔሻል ድንች ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "290",
+      "description": "",
+      "order": 31
+    },
+    {
+      "id": "seed-494c948ad41d",
+      "name": "Fasting Firfir",
+      "amharicName": "የፆም ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "210",
+      "description": "",
+      "order": 32
+    },
+    {
+      "id": "seed-0aea2cda24d7",
+      "name": "Fasting Tibs",
+      "amharicName": "የፆም ጥብስ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "260",
+      "description": "",
+      "order": 33
+    },
+    {
+      "id": "seed-983bef727e57",
+      "name": "Shiro",
+      "amharicName": "ሽሮ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "180",
+      "description": "",
+      "order": 34
+    },
+    {
+      "id": "seed-3bca4d5ed91a",
+      "name": "Shiro Lala",
+      "amharicName": "ሽሮ ላላ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "220",
+      "description": "",
+      "order": 35
+    },
+    {
+      "id": "seed-51736e786d3a",
+      "name": "Tegabino",
+      "amharicName": "ተጋቢኖ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "230",
+      "description": "",
+      "order": 36
+    },
+    {
+      "id": "seed-21d3c85c73bf",
+      "name": "Special Shiro",
+      "amharicName": "ስፔሻል ሽሮ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "260",
+      "description": "",
+      "order": 37
+    },
+    {
+      "id": "seed-7a1384ffcc06",
+      "name": "Suf Fitfit",
+      "amharicName": "ሱፍ ፍትፍት",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "185",
+      "description": "",
+      "order": 38
+    },
+    {
+      "id": "seed-c926ffa92b57",
+      "name": "Carrot Firfir",
+      "amharicName": "ካሮት ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "185",
+      "description": "",
+      "order": 39
+    },
+    {
+      "id": "seed-f3820a602dce",
+      "name": "Spe Dirkosh Firfir",
+      "amharicName": "ስፔሻል ድርቆሽ ፍርፍር",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "290",
+      "description": "",
+      "order": 40
+    },
+    {
+      "id": "seed-2bb31d9bd050",
+      "name": "Telba Fitfit",
+      "amharicName": "ተልባ ፍትፍት",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "200",
+      "description": "",
+      "order": 41
+    },
+    {
+      "id": "seed-e5d8eb9e8c3e",
+      "name": "Gomen Tibs",
+      "amharicName": "ጎመን ጥብስ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "220",
+      "description": "",
+      "order": 42
+    },
+    {
+      "id": "seed-214f54356afc",
+      "name": "Shiro With Gomen",
+      "amharicName": "ሽሮ በጎመን",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "290",
+      "description": "",
+      "order": 43
+    },
+    {
+      "id": "seed-efc4f6843558",
+      "name": "Rice With Avocado",
+      "amharicName": "ሩዝ በአቮካዶ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "260",
+      "description": "",
+      "order": 44
+    },
+    {
+      "id": "seed-c3ae20bcea11",
+      "name": "Buffet",
+      "amharicName": "ቡፌ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "390",
+      "description": "",
+      "order": 45
+    },
+    {
+      "id": "item-24",
+      "name": "Tomato Salad",
+      "amharicName": "ቲማቲም ሰላጣ",
+      "category": "የጾም ምግቦች / Fasting Foods",
+      "price": "230",
+      "description": "",
+      "order": 46
+    },
+    {
+      "id": "item-25",
+      "name": "Canee Special",
+      "amharicName": "ካኔ ስፔሻል",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "1450",
+      "description": "",
+      "order": 47
+    },
+    {
+      "id": "item-26",
+      "name": "Menchet",
+      "amharicName": "መንቼት",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "400",
+      "description": "",
+      "order": 48
+    },
+    {
+      "id": "item-27",
+      "name": "Sheep Tibs",
+      "amharicName": "የበግ ጥብስ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "550",
+      "description": "",
+      "order": 49
+    },
+    {
+      "id": "item-28",
+      "name": "Special Tibs",
+      "amharicName": "ስፔሻል ጥብስ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "600",
+      "description": "",
+      "order": 50
+    },
+    {
+      "id": "item-29",
+      "name": "Tibs Firfir",
+      "amharicName": "ጥብስ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "490",
+      "description": "",
+      "order": 51
+    },
+    {
+      "id": "item-30",
+      "name": "Special Tibs Firfir",
+      "amharicName": "ስፔሻል ጥብስ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "530",
+      "description": "",
+      "order": 52
+    },
+    {
+      "id": "item-31",
+      "name": "Dulet",
+      "amharicName": "ዱሌት",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "390",
+      "description": "",
+      "order": 53
+    },
+    {
+      "id": "item-32",
+      "name": "Kitfo",
+      "amharicName": "ክትፎ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "650",
+      "description": "",
+      "order": 54
+    },
+    {
+      "id": "item-33",
+      "name": "Special Kitfo",
+      "amharicName": "ስፔሻል ክትፎ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "750",
+      "description": "",
+      "order": 55
+    },
+    {
+      "id": "item-34",
+      "name": "Meat Firfir",
+      "amharicName": "የስጋ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "350",
+      "description": "",
+      "order": 56
+    },
+    {
+      "id": "item-35",
+      "name": "Special Meat Firfir",
+      "amharicName": "ስፔሻል የስጋ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "390",
+      "description": "",
+      "order": 57
+    },
+    {
+      "id": "item-36",
+      "name": "Dirkosh Firfir",
+      "amharicName": "ድርቆሽ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "350",
+      "description": "",
+      "order": 58
+    },
+    {
+      "id": "item-37",
+      "name": "Dirkosh firfir with Kwanta",
+      "amharicName": "ድርቆሽ ፍርፍር በቋንጣ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "370",
+      "description": "",
+      "order": 59
+    },
+    {
+      "id": "item-38",
+      "name": "Spageti With Meat",
+      "amharicName": "ፓስታ በስጋ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "320",
+      "description": "",
+      "order": 60
+    },
+    {
+      "id": "item-39",
+      "name": "Rice With Meat",
+      "amharicName": "ሩዝ በስጋ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "320",
+      "description": "",
+      "order": 61
+    },
+    {
+      "id": "item-40",
+      "name": "Shiro Bozena",
+      "amharicName": "ሽሮ ቦዜና",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "290",
+      "description": "",
+      "order": 62
+    },
+    {
+      "id": "item-41",
+      "name": "Gomen With Meat",
+      "amharicName": "ጎመን በስጋ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "320",
+      "description": "",
+      "order": 63
+    },
+    {
+      "id": "item-42",
+      "name": "Qwanta Firfir",
+      "amharicName": "ቋንጣ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "370",
+      "description": "",
+      "order": 64
+    },
+    {
+      "id": "item-43",
+      "name": "S. Qwanta firfir",
+      "amharicName": "ስፔሻል ቋንጣ ፍርፍር",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "450",
+      "description": "",
+      "order": 65
+    },
+    {
+      "id": "item-44",
+      "name": "Grill Tibis",
+      "amharicName": "ግሪል ጥብስ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "550",
+      "description": "",
+      "order": 66
+    },
+    {
+      "id": "item-45",
+      "name": "Spageti With Karboran",
+      "amharicName": "ፓስታ ካርቦናራ",
+      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "price": "395",
+      "description": "",
+      "order": 67
+    },
+    {
+      "id": "seed-4b2d0178a2ea",
+      "name": "Special Duble burger",
+      "amharicName": "ስፔሻል ድብል በርገር",
+      "category": "በርገር / Burger",
+      "price": "605",
+      "description": "",
+      "order": 68
+    },
+    {
+      "id": "seed-f8bc9c45fb85",
+      "name": "Duble Burger",
+      "amharicName": "ድብል በርገር",
+      "category": "በርገር / Burger",
+      "price": "570",
+      "description": "",
+      "order": 69
+    },
+    {
+      "id": "seed-a21f5c88f6f8",
+      "name": "Special Burger",
+      "amharicName": "ስፔሻል በርገር",
+      "category": "በርገር / Burger",
+      "price": "515",
+      "description": "",
+      "order": 70
+    },
+    {
+      "id": "seed-cdbc249becbd",
+      "name": "Normal Burger",
+      "amharicName": "ኖርማል በርገር",
+      "category": "በርገር / Burger",
+      "price": "450",
+      "description": "",
+      "order": 71
+    },
+    {
+      "id": "seed-5db4db68dd53",
+      "name": "Cheese Burger",
+      "amharicName": "ቺዝ በርገር",
+      "category": "በርገር / Burger",
+      "price": "490",
+      "description": "",
+      "order": 72
+    },
+    {
+      "id": "seed-ddbbb509c477",
+      "name": "Chicken Burger",
+      "amharicName": "ቺክን በርገር",
+      "category": "በርገር / Burger",
+      "price": "520",
+      "description": "",
+      "order": 73
+    },
+    {
+      "id": "seed-b5e274ffda62",
+      "name": "Vegitable Burger",
+      "amharicName": "የአትክልት በርገር",
+      "category": "በርገር / Burger",
+      "price": "320",
+      "description": "",
+      "order": 74
+    },
+    {
+      "id": "seed-ac65dbedf1b2",
+      "name": "Berugeron",
+      "amharicName": "በርገሮን",
+      "category": "በርገር / Burger",
+      "price": "380",
+      "description": "",
+      "order": 75
+    },
+    {
+      "id": "seed-c2ebe90d5a93",
+      "name": "Special Club Sandwich",
+      "amharicName": "ስፔሻል ክለብ ሳንድዊች",
+      "category": "መክሰስ / Snack",
+      "price": "520",
+      "description": "",
+      "order": 76
+    },
+    {
+      "id": "seed-84b88f098e20",
+      "name": "Club Sandwich",
+      "amharicName": "ክለብ ሳንድዊች",
+      "category": "መክሰስ / Snack",
+      "price": "480",
+      "description": "",
+      "order": 77
+    },
+    {
+      "id": "seed-4ace69c63800",
+      "name": "Vegitable Sandwich",
+      "amharicName": "የአትክልት ሳንድዊች",
+      "category": "መክሰስ / Snack",
+      "price": "210",
+      "description": "",
+      "order": 78
+    },
+    {
+      "id": "seed-8167b0b06d3e",
+      "name": "Tuna Sandwich",
+      "amharicName": "ቱና ሳንድዊች",
+      "category": "መክሰስ / Snack",
+      "price": "420",
+      "description": "",
+      "order": 79
+    },
+    {
+      "id": "seed-1eb3a576832a",
+      "name": "Chicken Rap",
+      "amharicName": "ቺክን ራፕ",
+      "category": "መክሰስ / Snack",
+      "price": "480",
+      "description": "",
+      "order": 80
+    },
+    {
+      "id": "seed-07274981727e",
+      "name": "Vegitable Rap",
+      "amharicName": "የአትክልት ራፕ",
+      "category": "መክሰስ / Snack",
+      "price": "290",
+      "description": "",
+      "order": 81
+    },
+    {
+      "id": "seed-7423d976d6bd",
+      "name": "Beef Rap",
+      "amharicName": "ቢፍ ራፕ",
+      "category": "መክሰስ / Snack",
+      "price": "420",
+      "description": "",
+      "order": 82
+    },
+    {
+      "id": "seed-3669d81f2884",
+      "name": "French Fries",
+      "amharicName": "ፍሬንች ፍራይስ",
+      "category": "መክሰስ / Snack",
+      "price": "250",
+      "description": "",
+      "order": 83
+    },
+    {
+      "id": "seed-3d7d3facd888",
+      "name": "Special Pizza",
+      "amharicName": "ስፔሻል ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "530",
+      "description": "",
+      "order": 84
+    },
+    {
+      "id": "seed-2ede7662be42",
+      "name": "Buff Pizza",
+      "amharicName": "ቡፌ ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "499",
+      "description": "",
+      "order": 85
+    },
+    {
+      "id": "seed-d7005f5f3398",
+      "name": "Chicken Pizza",
+      "amharicName": "ቺክን ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "425",
+      "description": "",
+      "order": 86
+    },
+    {
+      "id": "seed-7452bda86dff",
+      "name": "Tuna Pizza",
+      "amharicName": "ቱና ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "510",
+      "description": "",
+      "order": 87
+    },
+    {
+      "id": "seed-4f7fd00f5276",
+      "name": "Vegitable Pizza",
+      "amharicName": "የአትክልት ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "350",
+      "description": "",
+      "order": 88
+    },
+    {
+      "id": "seed-dbbcb1b8b0cd",
+      "name": "Special Vegitable Pizza",
+      "amharicName": "ስፔሻል የአትክልት ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "420",
+      "description": "",
+      "order": 89
+    },
+    {
+      "id": "seed-09252b6e1ead",
+      "name": "Margarita Pizza",
+      "amharicName": "ማርጋሪታ ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "470",
+      "description": "",
+      "order": 90
+    },
+    {
+      "id": "seed-72776ffc4b9c",
+      "name": "Abyssinia Pizza",
+      "amharicName": "አቢሲኒያ ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "530",
+      "description": "",
+      "order": 91
+    },
+    {
+      "id": "seed-6f4ec1ff155a",
+      "name": "Olive Pizza",
+      "amharicName": "ኦሊቭ ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "495",
+      "description": "",
+      "order": 92
+    },
+    {
+      "id": "seed-228b9d39ac8a",
+      "name": "Special Fasting Pizza",
+      "amharicName": "ስፔሻል የፆም ፒዛ",
+      "category": "ፒዛ / Pizza",
+      "price": "530",
+      "description": "",
+      "order": 93
+    },
+    {
+      "id": "seed-610cb68efda7",
+      "name": "Fish Firfir",
+      "amharicName": "አሳ ቁልስ",
+      "category": "ዓሳ / Fish",
+      "price": "450",
+      "description": "",
+      "order": 94
+    },
+    {
+      "id": "seed-7fb0b5f4f81a",
+      "name": "Fish Gulash",
+      "amharicName": "አሳ ጉላሽ",
+      "category": "ዓሳ / Fish",
+      "price": "510",
+      "description": "",
+      "order": 95
+    },
+    {
+      "id": "seed-48ef13edbfbf",
+      "name": "Fish Dulet",
+      "amharicName": "አሳ ዱሌት",
+      "category": "ዓሳ / Fish",
+      "price": "490",
+      "description": "",
+      "order": 96
+    },
+    {
+      "id": "seed-e5bcb65840c6",
+      "name": "Fish Kotelate",
+      "amharicName": "አሳ ኮትሌት",
+      "category": "ዓሳ / Fish",
+      "price": "520",
+      "description": "",
+      "order": 97
+    },
+    {
+      "id": "seed-e1464dd20479",
+      "name": "Grill Fish",
+      "amharicName": "ግሪል አሳ",
+      "category": "ዓሳ / Fish",
+      "price": "550",
+      "description": "",
+      "order": 98
+    },
+    {
+      "id": "seed-c5150870a5cb",
+      "name": "Normal Juice",
+      "amharicName": "ኖርማል ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "185",
+      "description": "",
+      "order": 99
+    },
+    {
+      "id": "seed-1744af7578f4",
+      "name": "Canne Special Juice",
+      "amharicName": "ካኔ ስፔሻል ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "230",
+      "description": "",
+      "order": 100
+    },
+    {
+      "id": "seed-0cdadc90acb9",
+      "name": "Mango Juice",
+      "amharicName": "ማንጎ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "185",
+      "description": "",
+      "order": 101
+    },
+    {
+      "id": "seed-0e0b96cbf065",
+      "name": "Avocado Juice",
+      "amharicName": "አቮካዶ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "185",
+      "description": "",
+      "order": 102
+    },
+    {
+      "id": "seed-34fd4e2a81c1",
+      "name": "Papaya Juice",
+      "amharicName": "ፓፓያ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "185",
+      "description": "",
+      "order": 103
+    },
+    {
+      "id": "seed-7b45eca3c67d",
+      "name": "Watermelon Juice",
+      "amharicName": "ሀብሀብ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "185",
+      "description": "",
+      "order": 104
+    },
+    {
+      "id": "seed-16cefdcc0c4e",
+      "name": "Pineapple Juice",
+      "amharicName": "አናናስ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "220",
+      "description": "",
+      "order": 105
+    },
+    {
+      "id": "seed-82faf059fdf4",
+      "name": "Moka Juice",
+      "amharicName": "ሞካ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "225",
+      "description": "",
+      "order": 106
+    },
+    {
+      "id": "seed-7d24ee168444",
+      "name": "Mixed Juice",
+      "amharicName": "ሚክስድ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "210",
+      "description": "",
+      "order": 107
+    },
+    {
+      "id": "seed-d58213452b7b",
+      "name": "Fruit Panch",
+      "amharicName": "ፍሩት ፖንች",
+      "category": "ጭማቂ / Juice",
+      "price": "200",
+      "description": "",
+      "order": 108
+    },
+    {
+      "id": "seed-20a0eafab164",
+      "name": "S. Fruit Panch",
+      "amharicName": "ስፔሻል ፍሩት ፖንች",
+      "category": "ጭማቂ / Juice",
+      "price": "450",
+      "description": "",
+      "order": 109
+    },
+    {
+      "id": "seed-6ada25f16f23",
+      "name": "Chocolate Milk Shak",
+      "amharicName": "ቸኮሌት ሚልክ ሼክ",
+      "category": "ጭማቂ / Juice",
+      "price": "250",
+      "description": "",
+      "order": 110
+    },
+    {
+      "id": "seed-37606486832f",
+      "name": "Strawberry Shak",
+      "amharicName": "ስትሮቤሪ ሼክ",
+      "category": "ጭማቂ / Juice",
+      "price": "250",
+      "description": "",
+      "order": 111
+    },
+    {
+      "id": "seed-22049f73113f",
+      "name": "Strawberry Juice",
+      "amharicName": "ስትሮቤሪ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "230",
+      "description": "",
+      "order": 112
+    },
+    {
+      "id": "seed-af4531d6ab91",
+      "name": "Milk Shak",
+      "amharicName": "ሚልክ ሼክ",
+      "category": "ጭማቂ / Juice",
+      "price": "225",
+      "description": "",
+      "order": 113
+    },
+    {
+      "id": "seed-d6f61dac6f5b",
+      "name": "Banana Shak",
+      "amharicName": "ባናና ሼክ",
+      "category": "ጭማቂ / Juice",
+      "price": "240",
+      "description": "",
+      "order": 114
+    },
+    {
+      "id": "seed-2f2e26ca751f",
+      "name": "Carrot juice",
+      "amharicName": "ካሮት ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "170",
+      "description": "",
+      "order": 115
+    },
+    {
+      "id": "seed-51dc8710126b",
+      "name": "Sweet Juice",
+      "amharicName": "ስዊት ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "225",
+      "description": "",
+      "order": 116
+    },
+    {
+      "id": "seed-ea22cfecd39c",
+      "name": "Red Juice",
+      "amharicName": "ሬድ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "180",
+      "description": "",
+      "order": 117
+    },
+    {
+      "id": "seed-e361cdde9337",
+      "name": "Guava Juice",
+      "amharicName": "ጉአቫ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "170",
+      "description": "",
+      "order": 118
+    },
+    {
+      "id": "seed-7c2537b7cec5",
+      "name": "Orange Juice",
+      "amharicName": "ኦሬንጅ ጁስ",
+      "category": "ጭማቂ / Juice",
+      "price": "220",
+      "description": "",
+      "order": 119
+    },
+    {
+      "id": "seed-157e74b9509e",
+      "name": "Fruit Salad",
+      "amharicName": "ፍሩት ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "370",
+      "description": "",
+      "order": 120
+    },
+    {
+      "id": "seed-b6b145bc3258",
+      "name": "Mixed Salad",
+      "amharicName": "ሚክስድ ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "300",
+      "description": "",
+      "order": 121
+    },
+    {
+      "id": "seed-15c3688fe2f8",
+      "name": "Avocado Salad",
+      "amharicName": "አቮካዶ ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "290",
+      "description": "",
+      "order": 122
+    },
+    {
+      "id": "seed-833cfe7415fd",
+      "name": "Tuna Salad",
+      "amharicName": "ቱና ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "350",
+      "description": "",
+      "order": 123
+    },
+    {
+      "id": "seed-df82e82f28fa",
+      "name": "Potato Salad",
+      "amharicName": "ድንች ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "270",
+      "description": "",
+      "order": 124
+    },
+    {
+      "id": "seed-eb229104beff",
+      "name": "Russian Salad",
+      "amharicName": "ራሺያን ሰላጣ",
+      "category": "ሰላጣ / Salad",
+      "price": "400",
+      "description": "",
+      "order": 125
+    },
+    {
+      "id": "seed-0cde5da98f2a",
+      "name": "Chicken Soup",
+      "amharicName": "ዶሮ ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "370",
+      "description": "",
+      "order": 126
+    },
+    {
+      "id": "seed-446558626db9",
+      "name": "Vegitable Soup",
+      "amharicName": "የአትክልት ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "220",
+      "description": "",
+      "order": 127
+    },
+    {
+      "id": "seed-e4b0eaf0d561",
+      "name": "Minstroni Soup",
+      "amharicName": "ሚኒስትሮኒ ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "260",
+      "description": "",
+      "order": 128
+    },
+    {
+      "id": "seed-ce99ebbedb1a",
+      "name": "Tomato Soup",
+      "amharicName": "ቲማቲም ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "200",
+      "description": "",
+      "order": 129
+    },
+    {
+      "id": "seed-261aded1af31",
+      "name": "Fish Soup",
+      "amharicName": "አሳ ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "355",
+      "description": "",
+      "order": 130
+    },
+    {
+      "id": "seed-ce52a0b07244",
+      "name": "Meat Soup",
+      "amharicName": "የስጋ ሱፕ",
+      "category": "ሾርባ / Soup",
+      "price": "350",
+      "description": "",
+      "order": 131
+    },
+    {
+      "id": "seed-f80a70453d2b",
+      "name": "Soft Drink",
+      "amharicName": "ለስላሳ",
+      "category": "ለስላሳ መጠጦች / Soft Drinks",
+      "price": "70",
+      "description": "",
+      "order": 132
+    },
+    {
+      "id": "seed-8d8bb147a313",
+      "name": "1 Liter Water",
+      "amharicName": "1 ሊትር ውሃ",
+      "category": "ለስላሳ መጠጦች / Soft Drinks",
+      "price": "55",
+      "description": "",
+      "order": 133
+    },
+    {
+      "id": "seed-f3f1eeffe392",
+      "name": "2 Liter Water",
+      "amharicName": "2 ሊትር ውሃ",
+      "category": "ለስላሳ መጠጦች / Soft Drinks",
+      "price": "70",
+      "description": "",
+      "order": 134
+    },
+    {
+      "id": "seed-d22ff3047337",
+      "name": "0.5 Liter Water",
+      "amharicName": "0.5 ሊትር ውሃ",
+      "category": "ለስላሳ መጠጦች / Soft Drinks",
+      "price": "45",
+      "description": "",
+      "order": 135
+    },
+    {
+      "id": "seed-f7dd06445105",
+      "name": "Malta",
+      "amharicName": "ማልታ",
+      "category": "ለስላሳ መጠጦች / Soft Drinks",
+      "price": "95",
+      "description": "",
+      "order": 136
+    },
+    {
+      "id": "seed-9fa0cbc9cd63",
+      "name": "Tea",
+      "amharicName": "ሻይ",
+      "category": "ተጨማሪ / Extras",
+      "price": "90",
+      "description": "",
+      "order": 137
+    },
+    {
+      "id": "seed-7f74a2871499",
+      "name": "Vision Tape",
+      "amharicName": "የቪዥን ቴፕ",
+      "category": "ተጨማሪ / Extras",
+      "price": "30",
+      "description": "",
+      "order": 138
+    },
+    {
+      "id": "seed-255490ae4da5",
+      "name": "Tsebel",
+      "amharicName": "ጸበል",
+      "category": "ተጨማሪ / Extras",
+      "price": "35",
+      "description": "",
+      "order": 139
+    },
+    {
+      "id": "seed-c6a190a540b7",
+      "name": "Indomie",
+      "amharicName": "እንዶሚ",
+      "category": "ተጨማሪ / Extras",
+      "price": "40",
+      "description": "",
+      "order": 140
+    },
+    {
+      "id": "seed-e235872662ba",
+      "name": "Mayonnaise",
+      "amharicName": "ማዮኔዝ",
+      "category": "ተጨማሪ / Extras",
+      "price": "100",
+      "description": "",
+      "order": 141
+    },
+    {
+      "id": "seed-4eee55483ff5",
+      "name": "Almond",
+      "amharicName": "አልመንድም",
+      "category": "ተጨማሪ / Extras",
+      "price": "45",
+      "description": "",
+      "order": 142
+    },
+    {
+      "id": "seed-0f9b2fc5d586",
+      "name": "Plastic",
+      "amharicName": "ፕላስቲክ",
+      "category": "ተጨማሪ / Extras",
+      "price": "55",
+      "description": "",
+      "order": 143
+    },
+    {
+      "id": "seed-a590407ee064",
+      "name": "Extra Oil",
+      "amharicName": "ዘይት ተጨማሪ",
+      "category": "ተጨማሪ / Extras",
+      "price": "40",
+      "description": "",
+      "order": 144
+    },
+    {
+      "id": "seed-c2b6b5118cc7",
+      "name": "Extra Coffee",
+      "amharicName": "ቡና ተጨማሪ",
+      "category": "ተጨማሪ / Extras",
+      "price": "20",
+      "description": "",
+      "order": 145
+    },
+    {
+      "id": "seed-99734a31a566",
+      "name": "Turmeric",
+      "amharicName": "እርድ",
+      "category": "ተጨማሪ / Extras",
+      "price": "70",
+      "description": "",
+      "order": 146
+    },
+    {
+      "id": "seed-6a75903f8e51",
+      "name": "Mayonnaise Cup",
+      "amharicName": "ማዮኔዝ ካፕ",
+      "category": "ተጨማሪ / Extras",
+      "price": "40",
+      "description": "",
+      "order": 147
+    },
+    {
+      "id": "seed-19ba567611ad",
+      "name": "Egg",
+      "amharicName": "እንቁላል",
+      "category": "ተጨማሪ / Extras",
+      "price": "50",
+      "description": "",
+      "order": 148
+    },
+    {
+      "id": "seed-a01c02ece818",
+      "name": "Special Mojito",
+      "amharicName": "ስፔሻል ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "185",
+      "description": "",
+      "order": 149
+    },
+    {
+      "id": "seed-f798553a7e5f",
+      "name": "Strawberry Mojito",
+      "amharicName": "ስትሮቤሪ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "150",
+      "description": "",
+      "order": 150
+    },
+    {
+      "id": "seed-9d2b44a7b7d4",
+      "name": "Orange Mojito",
+      "amharicName": "ኦሬንጅ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "160",
+      "description": "",
+      "order": 151
+    },
+    {
+      "id": "seed-3f99d8ce012d",
+      "name": "Spe Ambo water with Hony",
+      "amharicName": "ስፔሻል አምቦ ውሀ በማር",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "150",
+      "description": "",
+      "order": 152
+    },
+    {
+      "id": "seed-8a8bbdef1cca",
+      "name": "Ambo water with Hony",
+      "amharicName": "አምቦ ውሀ በማር",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "125",
+      "description": "",
+      "order": 153
+    },
+    {
+      "id": "seed-18c8b0c1f1ad",
+      "name": "Ice Coffee",
+      "amharicName": "አይስ ቡና",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "120",
+      "description": "",
+      "order": 154
+    },
+    {
+      "id": "seed-0a9fb5d2122a",
+      "name": "Ice Latt",
+      "amharicName": "አይስ ላቴ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "180",
+      "description": "",
+      "order": 155
+    },
+    {
+      "id": "seed-2ff74fc68ba1",
+      "name": "Caramel Ice Coffee",
+      "amharicName": "ካራሜል አይስ ቡና",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "180",
+      "description": "",
+      "order": 156
+    },
+    {
+      "id": "seed-c3cc61f51b9e",
+      "name": "Ice Frapachino",
+      "amharicName": "አይስ ፍራፓቺኖ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "170",
+      "description": "",
+      "order": 157
+    },
+    {
+      "id": "seed-f19eb0d1867c",
+      "name": "Str Ice Frapachino",
+      "amharicName": "ስትሮቤሪ አይስ ፍራፓቺኖ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "170",
+      "description": "",
+      "order": 158
+    },
+    {
+      "id": "seed-d8e908624256",
+      "name": "Orange Ice Frapachino",
+      "amharicName": "ኦሬንጅ አይስ ፍራፓቺኖ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "170",
+      "description": "",
+      "order": 159
+    },
+    {
+      "id": "seed-e30bfc834bb7",
+      "name": "Pinapple Ice Frapachino",
+      "amharicName": "አናናስ አይስ ፍራፓቺኖ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "170",
+      "description": "",
+      "order": 160
+    },
+    {
+      "id": "seed-57096d6d4227",
+      "name": "Special Ice Frapachino",
+      "amharicName": "ስፔሻል አይስ ፍራፓቺኖ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "210",
+      "description": "",
+      "order": 161
+    },
+    {
+      "id": "seed-aa4b2c748c04",
+      "name": "Special Mixed Ice Lati",
+      "amharicName": "ስፔሻል ሚክስድ አይስ ላቴ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "220",
+      "description": "",
+      "order": 162
+    },
+    {
+      "id": "seed-c857aa9d8fd1",
+      "name": "Avatar",
+      "amharicName": "አቫታር",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "150",
+      "description": "",
+      "order": 163
+    },
+    {
+      "id": "seed-47d1253518a9",
+      "name": "Titanic Mojito",
+      "amharicName": "ታይታኒክ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "165",
+      "description": "",
+      "order": 164
+    },
+    {
+      "id": "seed-0ba36ac50759",
+      "name": "Lemon Mojito",
+      "amharicName": "ሌመን ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "150",
+      "description": "",
+      "order": 165
+    },
+    {
+      "id": "seed-d21db79cb155",
+      "name": "Love Mojito",
+      "amharicName": "ላቭ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "165",
+      "description": "",
+      "order": 166
+    },
+    {
+      "id": "seed-d1f8e5b7896c",
+      "name": "Smoothie Mojito",
+      "amharicName": "ስሙዚ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "165",
+      "description": "",
+      "order": 167
+    },
+    {
+      "id": "seed-ddfb6203b320",
+      "name": "Mixed Ice Lati",
+      "amharicName": "ሚክስድ አይስ ላቴ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "185",
+      "description": "",
+      "order": 168
+    },
+    {
+      "id": "seed-823ba8b2df07",
+      "name": "Yame Mojito",
+      "amharicName": "ያሜ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "175",
+      "description": "",
+      "order": 169
+    },
+    {
+      "id": "seed-8513ec158ab6",
+      "name": "Sensat Mojito",
+      "amharicName": "ሰንሴት ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "175",
+      "description": "",
+      "order": 170
+    },
+    {
+      "id": "item-46",
+      "name": "Special Coffee",
+      "amharicName": "ስፔሻል ቡና",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "160",
+      "description": "",
+      "order": 171
+    },
+    {
+      "id": "item-47",
+      "name": "King Mojito",
+      "amharicName": "ኪንግ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "175",
+      "description": "",
+      "order": 172
+    },
+    {
+      "id": "item-48",
+      "name": "Caramel Ice Latt",
+      "amharicName": "ካራሜል አይስ ላቴ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "200",
+      "description": "",
+      "order": 173
+    },
+    {
+      "id": "item-49",
+      "name": "Watermelon Mojito",
+      "amharicName": "ሀብሀብ ሞሂቶ",
+      "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+      "price": "150",
+      "description": "",
+      "order": 174
+    },
+    {
+      "id": "seed-32e1a4aab606",
+      "name": "Tea",
+      "amharicName": "ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "60",
+      "description": "",
+      "order": 175
+    },
+    {
+      "id": "seed-344a46878d38",
+      "name": "Special Tea",
+      "amharicName": "ስፔሻል ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "95",
+      "description": "",
+      "order": 176
+    },
+    {
+      "id": "seed-b1f423a885de",
+      "name": "Lemon Tea",
+      "amharicName": "ሎሚ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "40",
+      "description": "",
+      "order": 177
+    },
+    {
+      "id": "seed-12557ff20d9f",
+      "name": "Carrot Tea",
+      "amharicName": "ካሮት ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "40",
+      "description": "",
+      "order": 178
+    },
+    {
+      "id": "seed-95b77a049f84",
+      "name": "Moringa Tea",
+      "amharicName": "ሞሪንጋ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "50",
+      "description": "",
+      "order": 179
+    },
+    {
+      "id": "seed-7b5381f29d10",
+      "name": "Green Tea",
+      "amharicName": "ግሪን ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 180
+    },
+    {
+      "id": "seed-2b155f8d35b4",
+      "name": "Hibiscus Tea",
+      "amharicName": "ሂቢስከስ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "50",
+      "description": "",
+      "order": 181
+    },
+    {
+      "id": "seed-7415e5c4c781",
+      "name": "Orange Tea",
+      "amharicName": "ኦሬንጅ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 182
+    },
+    {
+      "id": "seed-2cb36d844b0e",
+      "name": "Mango Tea",
+      "amharicName": "ማንጎ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 183
+    },
+    {
+      "id": "seed-aa018acd7793",
+      "name": "Pineapple Tea",
+      "amharicName": "አናናስ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 184
+    },
+    {
+      "id": "seed-dc98228619d4",
+      "name": "Strawberry Tea",
+      "amharicName": "ስትሮቤሪ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 185
+    },
+    {
+      "id": "seed-3dea94dc1157",
+      "name": "Cinnamon Tea",
+      "amharicName": "ቀረፋ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "45",
+      "description": "",
+      "order": 186
+    },
+    {
+      "id": "seed-091620728d77",
+      "name": "Tea Sprite",
+      "amharicName": "ሻይ ስፕራይት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "65",
+      "description": "",
+      "order": 187
+    },
+    {
+      "id": "seed-829b9fa6d721",
+      "name": "Cultural Coffee",
+      "amharicName": "ባህላዊ ቡና",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "50",
+      "description": "",
+      "order": 188
+    },
+    {
+      "id": "seed-63bf91db8cb7",
+      "name": "Machine Coffee",
+      "amharicName": "ማሽን ቡና",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "60",
+      "description": "",
+      "order": 189
+    },
+    {
+      "id": "seed-e2c05ae9fd50",
+      "name": "Coffee Milk",
+      "amharicName": "ቡና በወተት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "65",
+      "description": "",
+      "order": 190
+    },
+    {
+      "id": "seed-c7aa3227d17f",
+      "name": "Macchiato",
+      "amharicName": "ማኪያቶ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "80",
+      "description": "",
+      "order": 191
+    },
+    {
+      "id": "seed-89d82138e14a",
+      "name": "Fasting Macchiato",
+      "amharicName": "የፆም ማኪያቶ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "75",
+      "description": "",
+      "order": 192
+    },
+    {
+      "id": "seed-82da4c4fafd2",
+      "name": "Double Macchiato",
+      "amharicName": "ድብል ማኪያቶ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "120",
+      "description": "",
+      "order": 193
+    },
+    {
+      "id": "seed-203cf1133d30",
+      "name": "Peanut",
+      "amharicName": "ፒናት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "180",
+      "description": "",
+      "order": 194
+    },
+    {
+      "id": "seed-bebcd41a7f4c",
+      "name": "Special Peanut",
+      "amharicName": "ስፔሻል ፒናት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "210",
+      "description": "",
+      "order": 195
+    },
+    {
+      "id": "seed-f2f14f7f0721",
+      "name": "Peanut With Tea",
+      "amharicName": "ፒናት በሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "70",
+      "description": "",
+      "order": 196
+    },
+    {
+      "id": "seed-e712b4952a40",
+      "name": "Peanut With Milk",
+      "amharicName": "ፒናት በወተት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "90",
+      "description": "",
+      "order": 197
+    },
+    {
+      "id": "seed-71e67c50e975",
+      "name": "Peanut With Coffee",
+      "amharicName": "ፒናት በቡና",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "80",
+      "description": "",
+      "order": 198
+    },
+    {
+      "id": "seed-8e1f9b0fc98a",
+      "name": "Cappuccino",
+      "amharicName": "ካፑቺኖ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "130",
+      "description": "",
+      "order": 199
+    },
+    {
+      "id": "seed-489508236c74",
+      "name": "Ginger Tea",
+      "amharicName": "ጂንጅር ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "110",
+      "description": "",
+      "order": 200
+    },
+    {
+      "id": "seed-ac9ab0d01987",
+      "name": "Milk Chocolate",
+      "amharicName": "ሚልክ ቸኮሌት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "110",
+      "description": "",
+      "order": 201
+    },
+    {
+      "id": "seed-5437042ec001",
+      "name": "Chocolate Tea",
+      "amharicName": "ቸኮሌት ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "90",
+      "description": "",
+      "order": 202
+    },
+    {
+      "id": "seed-ba27103ddbe4",
+      "name": "Coffee With Butter",
+      "amharicName": "ቡና በቅቤ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "90",
+      "description": "",
+      "order": 203
+    },
+    {
+      "id": "seed-c3e54355bdee",
+      "name": "Special Hot Chocolate",
+      "amharicName": "ስፔሻል ሆት ቸኮሌት",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "135",
+      "description": "",
+      "order": 204
+    },
+    {
+      "id": "seed-e94f3c9fb224",
+      "name": "Natural Spe Tea",
+      "amharicName": "ስፔሻል ተፈጥሮ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "125",
+      "description": "",
+      "order": 205
+    },
+    {
+      "id": "seed-85c074af9f9b",
+      "name": "Cinnamon Butter Tea",
+      "amharicName": "ቀረፋ በቅቤ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "105",
+      "description": "",
+      "order": 206
+    },
+    {
+      "id": "seed-63a675dc0cea",
+      "name": "Canee Tea",
+      "amharicName": "ካኔ ሻይ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "95",
+      "description": "",
+      "order": 207
+    },
+    {
+      "id": "seed-98cf6c1916b5",
+      "name": "Clove",
+      "amharicName": "ቅርንፉድ",
+      "category": "ትኩስ መጠጦች / Hot Drinks",
+      "price": "95",
+      "description": "",
+      "order": 208
+    },
+    {
+      "id": "seed-7eec32665b40",
+      "name": "Tiramisu Cup",
+      "amharicName": "ቲራሚሱ ካፕ",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "80",
+      "description": "",
+      "order": 209
+    },
+    {
+      "id": "seed-7f881d835c65",
+      "name": "Caramel",
+      "amharicName": "ካራሜል",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "80",
+      "description": "",
+      "order": 210
+    },
+    {
+      "id": "seed-6aa3e16583fb",
+      "name": "Chocolate",
+      "amharicName": "ቸኮሌት",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "110",
+      "description": "",
+      "order": 211
+    },
+    {
+      "id": "seed-67a17cc21c88",
+      "name": "Strawberry",
+      "amharicName": "ስትሮቤሪ",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "80",
+      "description": "",
+      "order": 212
+    },
+    {
+      "id": "seed-4ab195e50b74",
+      "name": "Black Forest",
+      "amharicName": "ብላክ ፎረስት",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "110",
+      "description": "",
+      "order": 213
+    },
+    {
+      "id": "seed-4e04facb944a",
+      "name": "Tiramisu",
+      "amharicName": "ቲራሚሱ",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "80",
+      "description": "",
+      "order": 214
+    },
+    {
+      "id": "seed-cb7c8399957f",
+      "name": "California",
+      "amharicName": "ካሊፎርኒያ",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "80",
+      "description": "",
+      "order": 215
+    },
+    {
+      "id": "seed-7e6bc87ce123",
+      "name": "White Forest",
+      "amharicName": "ኋይት ፎረስት",
+      "category": "ኬክ በካፕ / Dessert Cup",
+      "price": "110",
+      "description": "",
+      "order": 216
+    },
+    {
+      "id": "seed-5ee7f49228d3",
+      "name": "Bisklet",
+      "amharicName": "ቢስክሌት",
+      "category": "ኬክ / Cake",
+      "price": "100",
+      "description": "",
+      "order": 217
+    },
+    {
+      "id": "seed-20c1a32f8d2e",
+      "name": "Coconut",
+      "amharicName": "ኮኮናት",
+      "category": "ኬክ / Cake",
+      "price": "120",
+      "description": "",
+      "order": 218
+    },
+    {
+      "id": "seed-179a372e3c73",
+      "name": "Muffin",
+      "amharicName": "ማፊን",
+      "category": "ኬክ / Cake",
+      "price": "110",
+      "description": "",
+      "order": 219
+    },
+    {
+      "id": "seed-e32094de18ce",
+      "name": "Vanilla",
+      "amharicName": "ቫኒላ",
+      "category": "ኬክ / Cake",
+      "price": "100",
+      "description": "",
+      "order": 220
+    },
+    {
+      "id": "seed-a6c9acfa52d1",
+      "name": "Donut",
+      "amharicName": "ዶናት",
+      "category": "ኬክ / Cake",
+      "price": "110",
+      "description": "",
+      "order": 221
+    },
+    {
+      "id": "seed-205aae4f37e1",
+      "name": "Double Chocolate",
+      "amharicName": "፪ኤል ቸኮሌት",
+      "category": "ኬክ / Cake",
+      "price": "130",
+      "description": "",
+      "order": 222
+    },
+    {
+      "id": "item-50",
+      "name": "Double Strawberry",
+      "amharicName": "፪ኤል ስትሮቤሪ",
+      "category": "ኬክ / Cake",
+      "price": "130",
+      "description": "",
+      "order": 223
+    },
+    {
+      "id": "item-51",
+      "name": "Tekrosh",
+      "amharicName": "ቴክሮሽ",
+      "category": "ኬክ / Pastry Treats",
+      "price": "55",
+      "description": "",
+      "order": 224
+    },
+    {
+      "id": "item-52",
+      "name": "Redberry",
+      "amharicName": "ሬድቤሪ",
+      "category": "ኬክ / Pastry Treats",
+      "price": "55",
+      "description": "",
+      "order": 225
+    },
+    {
+      "id": "item-53",
+      "name": "Vanilla",
+      "amharicName": "ቫኒላ",
+      "category": "ኬክ / Pastry Treats",
+      "price": "50",
+      "description": "",
+      "order": 226
+    },
+    {
+      "id": "item-54",
+      "name": "Caramel",
+      "amharicName": "ካራሜል",
+      "category": "ኬክ / Pastry Treats",
+      "price": "45",
+      "description": "",
+      "order": 227
+    },
+    {
+      "id": "item-55",
+      "name": "Donut",
+      "amharicName": "ዶናት",
+      "category": "ኬክ / Pastry Treats",
+      "price": "40",
+      "description": "",
+      "order": 228
+    },
+    {
+      "id": "item-56",
+      "name": "Cake",
+      "amharicName": "ኬክ",
+      "category": "ኬክ / Pastry Treats",
+      "price": "50",
+      "description": "",
+      "order": 229
+    },
+    {
+      "id": "item-57",
+      "name": "Banana Cake",
+      "amharicName": "ባናና ኬክ",
+      "category": "ኬክ / Pastry Treats",
+      "price": "35",
+      "description": "",
+      "order": 230
+    },
+    {
+      "id": "item-58",
+      "name": "Special Torta 1kg",
+      "amharicName": "ስፔሻል ቶርታ 1kg",
+      "category": "ስፔሻል ቶርታ / Special Torta",
+      "price": "950",
+      "description": "",
+      "order": 231
+    },
+    {
+      "id": "item-59",
+      "name": "Special Torta 1.5kg",
+      "amharicName": "ስፔሻል ቶርታ 1.5kg",
+      "category": "ስፔሻል ቶርታ / Special Torta",
+      "price": "1350",
+      "description": "",
+      "order": 232
+    },
+    {
+      "id": "item-60",
+      "name": "Special Torta 2kg",
+      "amharicName": "ስፔሻል ቶርታ 2kg",
+      "category": "ስፔሻል ቶርታ / Special Torta",
+      "price": "1900",
+      "description": "",
+      "order": 233
+    },
+    {
+      "id": "item-61",
+      "name": "Special Torta 3kg",
+      "amharicName": "ስፔሻል ቶርታ 3kg",
+      "category": "ስፔሻል ቶርታ / Special Torta",
+      "price": "2400",
+      "description": "",
+      "order": 234
+    },
+    {
+      "id": "item-62",
+      "name": "Special Torta 4kg",
+      "amharicName": "ስፔሻል ቶርታ 4kg",
+      "category": "ስፔሻል ቶርታ / Special Torta",
+      "price": "3500",
+      "description": "",
+      "order": 235
+    },
+    {
+      "id": "item-63",
+      "name": "Torta Cake 1kg",
+      "amharicName": "ቶርታ ኬክ 1kg",
+      "category": "ቶርታ ኬክ / Torta Cake",
+      "price": "1100",
+      "description": "",
+      "order": 236
+    },
+    {
+      "id": "item-64",
+      "name": "Torta Cake 1.5kg",
+      "amharicName": "ቶርታ ኬክ 1.5kg",
+      "category": "ቶርታ ኬክ / Torta Cake",
+      "price": "1550",
+      "description": "",
+      "order": 237
+    },
+    {
+      "id": "item-65",
+      "name": "Torta Cake 2kg",
+      "amharicName": "ቶርታ ኬክ 2kg",
+      "category": "ቶርታ ኬክ / Torta Cake",
+      "price": "1900",
+      "description": "",
+      "order": 238
+    },
+    {
+      "id": "item-66",
+      "name": "Torta Cake 3kg",
+      "amharicName": "ቶርታ ኬክ 3kg",
+      "category": "ቶርታ ኬክ / Torta Cake",
+      "price": "2400",
+      "description": "",
+      "order": 239
+    },
+    {
+      "id": "item-67",
+      "name": "Torta Cake 4kg",
+      "amharicName": "ቶርታ ኬክ 4kg",
+      "category": "ቶርታ ኬክ / Torta Cake",
+      "price": "3200",
+      "description": "",
+      "order": 240
+    },
+    {
+      "id": "item-68",
+      "name": "Fondant Cake 1kg",
+      "amharicName": "ፎንዳንት ኬክ 1kg",
+      "category": "ፎንዳንት ኬክ / Fondant Cake",
+      "price": "1000",
+      "description": "",
+      "order": 241
+    },
+    {
+      "id": "item-69",
+      "name": "Cake 1/4 kg",
+      "amharicName": "ኬክ 1/4 kg",
+      "category": "ኬክ በኪሎ / Cake by Weight",
+      "price": "200",
+      "description": "",
+      "order": 242
+    },
+    {
+      "id": "item-70",
+      "name": "Cake 1/2 kg",
+      "amharicName": "ኬክ 1/2 kg",
+      "category": "ኬክ በኪሎ / Cake by Weight",
+      "price": "300",
+      "description": "",
+      "order": 243
+    },
+    {
+      "id": "item-71",
+      "name": "Cake 1 kg",
+      "amharicName": "ኬክ 1 kg",
+      "category": "ኬክ በኪሎ / Cake by Weight",
+      "price": "600",
+      "description": "",
+      "order": 244
+    }
+  ],
   "comments": [
     {
       "id": "comment-1790416920458-c25c20",
       "name": "Anonymous guest",
       "text": "ggggh",
       "rating": 1
+    }
+  ],
+  "adminCredentials": [
+    {
+      "email": "admin@canoe.com",
+      "password": "1111"
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "1111"
     }
   ]
 }
