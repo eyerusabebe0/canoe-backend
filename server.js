@@ -11,6 +11,7 @@ const connectDatabase = require('./config/database');
 const Category = require('./models/Category');
 const MenuItem = require('./models/MenuItem');
 const Comment = require('./models/Comment');
+const AdminCredential = require('./models/AdminCredential');
 const {
   DEFAULT_CATEGORIES,
   canonicalCategoryName,
@@ -184,6 +185,17 @@ const getCategoryNames = async () => {
 const getComments = async () => {
   if (useLocalStore) return readStore().comments;
   return (await Comment.find().sort({ createdAt: -1 }).lean()).map(toComment);
+};
+
+const getAdminCredentials = async () => {
+  if (useLocalStore) return readStore().adminCredentials;
+  return AdminCredential.find().select('email password -_id').lean();
+};
+
+const seedAdminCredentialsIfEmpty = async () => {
+  if (useLocalStore || await AdminCredential.exists()) return;
+  const credentials = readStore().adminCredentials;
+  await AdminCredential.insertMany(credentials.length ? credentials : DEFAULT_ADMIN_CREDENTIALS);
 };
 
 const ensureCategory = async (name) => {
@@ -458,7 +470,7 @@ app.put('/api/menu/:id', route(async (request, response) => {
       menu: store.menu.map((item) => (String(item.id) === String(itemId) ? { ...item, ...updatedItem } : item)),
     });
   } else {
-    await MenuItem.updateOne({ id: itemId }, {
+    const result = await MenuItem.updateOne({ id: itemId }, {
       $set: {
         name: updatedItem.name,
         amharicName: updatedItem.amharicName,
@@ -467,6 +479,7 @@ app.put('/api/menu/:id', route(async (request, response) => {
         description: updatedItem.description,
       },
     });
+    if (!result.matchedCount) return response.status(404).json({ message: 'Menu item not found.' });
   }
   await ensureCategory(updatedItem.category);
 
@@ -496,9 +509,13 @@ app.delete('/api/menu/:id', route(async (request, response) => {
   const itemId = request.params.id;
   if (useLocalStore) {
     const store = readStore();
+    if (!store.menu.some((item) => String(item.id) === String(itemId))) {
+      return response.status(404).json({ message: 'Menu item not found.' });
+    }
     writeStore({ ...store, menu: store.menu.filter((item) => String(item.id) !== String(itemId)) });
   } else {
-    await MenuItem.deleteOne({ id: itemId });
+    const result = await MenuItem.deleteOne({ id: itemId });
+    if (!result.deletedCount) return response.status(404).json({ message: 'Menu item not found.' });
   }
   return response.json({ menu: (await getMenuItems()).map(toMenuItem), message: 'Menu item deleted.' });
 }));
@@ -557,40 +574,47 @@ app.delete('/api/comments/:id', route(async (request, response) => {
 
 /* ---- Admin ---- */
 
-app.post('/api/admin/login', (request, response) => {
+app.post('/api/admin/login', route(async (request, response) => {
   const email = String(request.body?.email || '').trim();
   const password = String(request.body?.password || '');
-  const store = readStore();
-
-  const match = store.adminCredentials.some((credential) => credential.email === email && credential.password === password);
+  const credentials = await getAdminCredentials();
+  const match = credentials.some((credential) => credential.email === email && credential.password === password);
   if (!match) return response.status(401).json({ message: 'Incorrect email or password.' });
 
   return response.json({ success: true, message: 'Admin login successful.' });
-});
+}));
 
-app.post('/api/admin/change-credentials', (request, response) => {
+app.post('/api/admin/change-credentials', route(async (request, response) => {
   const currentEmail = String(request.body?.currentEmail || '').trim();
   const currentPassword = String(request.body?.currentPassword || '');
   const newEmail = String(request.body?.newEmail || '').trim();
   const newPassword = String(request.body?.newPassword || '');
-  const store = readStore();
-  const credentialIndex = store.adminCredentials.findIndex((credential) => credential.email === currentEmail && credential.password === currentPassword);
+  const credentials = await getAdminCredentials();
+  const credentialIndex = credentials.findIndex((credential) => credential.email === currentEmail && credential.password === currentPassword);
 
   if (credentialIndex < 0) return response.status(401).json({ message: 'Current email or password is incorrect.' });
   if (!newEmail || !newPassword) return response.status(400).json({ message: 'New email and password are required.' });
   if (!/^\S+@\S+\.\S+$/.test(newEmail)) return response.status(400).json({ message: 'Enter a valid email address.' });
   if (newPassword.length < 4) return response.status(400).json({ message: 'Password must be at least 4 characters.' });
 
-  const emailInUse = store.adminCredentials.some((credential, index) => index !== credentialIndex && credential.email === newEmail);
+  const emailInUse = credentials.some((credential, index) => index !== credentialIndex && credential.email === newEmail);
   if (emailInUse) return response.status(409).json({ message: 'That email is already in use.' });
 
-  const adminCredentials = store.adminCredentials.map((credential, index) => (
-    index === credentialIndex ? { email: newEmail, password: newPassword } : credential
-  ));
-  writeStore({ ...store, adminCredentials });
+  if (useLocalStore) {
+    const adminCredentials = credentials.map((credential, index) => (
+      index === credentialIndex ? { email: newEmail, password: newPassword } : credential
+    ));
+    writeStore({ ...readStore(), adminCredentials });
+  } else {
+    const result = await AdminCredential.updateOne(
+      { email: currentEmail, password: currentPassword },
+      { $set: { email: newEmail, password: newPassword } },
+    );
+    if (!result.matchedCount) return response.status(401).json({ message: 'Current email or password is incorrect.' });
+  }
 
   return response.json({ success: true, message: 'Admin credentials updated successfully.' });
-});
+}));
 
 // Central error handler: always answer with JSON.
 // eslint-disable-next-line no-unused-vars
@@ -607,11 +631,13 @@ const startServer = async () => {
   try {
     await connectDatabase();
   } catch (error) {
+    if (process.env.NODE_ENV === 'production') throw error;
     useLocalStore = true;
     console.warn(`MongoDB unavailable; using ${path.relative(__dirname, dataFile)} for local data: ${error.message}`);
   }
 
   try {
+    await seedAdminCredentialsIfEmpty();
     await seedCatalogIfEmpty();
   } catch (error) {
     console.error('Catalog seeding failed:', error);
