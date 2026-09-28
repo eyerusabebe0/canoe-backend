@@ -1,0 +1,546 @@
+[
+  {
+    "id": "item-1",
+    "name": "Egg Sandwich",
+    "amharicName": "እንቁላል ሳንድዊች",
+    "category": "ቁርስ / Breakfast",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "item-2",
+    "name": "Special Egg Sandwich",
+    "amharicName": "ስፔሻል እንቁላል ሳንድዊች",
+    "category": "ቁርስ / Breakfast",
+    "price": "360",
+    "description": ""
+  },
+  {
+    "id": "item-3",
+    "name": "Egg Firfir",
+    "amharicName": "እንቁላል ፍርፍር",
+    "category": "ቁርስ / Breakfast",
+    "price": "270",
+    "description": ""
+  },
+  {
+    "id": "item-4",
+    "name": "Egg Silis",
+    "amharicName": "እንቁላል ስልስ",
+    "category": "ቁርስ / Breakfast",
+    "price": "275",
+    "description": ""
+  },
+  {
+    "id": "item-5",
+    "name": "Egg with Meat",
+    "amharicName": "እንቁላል በስጋ",
+    "category": "ቁርስ / Breakfast",
+    "price": "345",
+    "description": ""
+  },
+  {
+    "id": "item-6",
+    "name": "Pancake",
+    "amharicName": "ፓንኬክ",
+    "category": "ቁርስ / Breakfast",
+    "price": "220",
+    "description": ""
+  },
+  {
+    "id": "item-7",
+    "name": "Omlet",
+    "amharicName": "ኦምሌት",
+    "category": "ቁርስ / Breakfast",
+    "price": "225",
+    "description": ""
+  },
+  {
+    "id": "item-8",
+    "name": "Special Omlet",
+    "amharicName": "ስፔሻል ኦምሌት",
+    "category": "ቁርስ / Breakfast",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "item-9",
+    "name": "Fetira",
+    "amharicName": "ፈቲራ",
+    "category": "ቁርስ / Breakfast",
+    "price": "220",
+    "description": ""
+  },
+  {
+    "id": "item-10",
+    "name": "Special Fetira",
+    "amharicName": "ስፔሻል ፈቲራ",
+    "category": "ቁርስ / Breakfast",
+    "price": "330",
+    "description": ""
+  },
+  {
+    "id": "item-11",
+    "name": "Chechebsa",
+    "amharicName": "ጨጨብሳ",
+    "category": "ቁርስ / Breakfast",
+    "price": "220",
+    "description": ""
+  },
+  {
+    "id": "item-12",
+    "name": "Special Chechebsa",
+    "amharicName": "ስፔሻል ጨጨብሳ",
+    "category": "ቁርስ / Breakfast",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "item-13",
+    "name": "Teff Chechebsa",
+    "amharicName": "የጤፍ ጨጨብሳ",
+    "category": "ቁርስ / Breakfast",
+    "price": "230",
+    "description": ""
+  },
+  {
+    "id": "item-14",
+    "name": "S.Teff Chechebsa",
+    "amharicName": "ስፔሻል የጤፍ ጨጨብሳ",
+    "category": "ቁርስ / Breakfast",
+    "price": "300",
+    "description": ""
+  },
+  {
+    "id": "item-15",
+    "name": "Ful",
+    "amharicName": "ፉል",
+    "category": "ቁርስ / Breakfast",
+    "price": "200",
+    "description": ""
+  },
+  {
+    "id": "item-16",
+    "name": "Special Ful",
+    "amharicName": "ስፔሻል ፉል",
+    "category": "ቁርስ / Breakfast",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "item-17",
+    "name": "Avocado Ful",
+    "amharicName": "አቮካዶ ፉል",
+    "category": "ቁርስ / Breakfast",
+    "price": "210",
+    "description": ""
+  },
+  {
+    "id": "item-18",
+    "name": "Pasta with Egg",
+    "amharicName": "ፓስታ በእንቁላል",
+    "category": "ቁርስ / Breakfast",
+    "price": "300",
+    "description": ""
+  },
+  {
+    "id": "item-19",
+    "name": "Rice With Egg",
+    "amharicName": "ሩዝ በእንቁላል",
+    "category": "ቁርስ / Breakfast",
+    "price": "300",
+    "description": ""
+  },
+  {
+    "id": "item-20",
+    "name": "Vegitable With Bread",
+    "amharicName": "አትክልት በዳቦ",
+    "category": "ቁርስ / Breakfast",
+    "price": "200",
+    "description": ""
+  },
+  {
+    "id": "item-21",
+    "name": "Frinch Tost",
+    "amharicName": "ፍሬንች ቶስት",
+    "category": "ቁርስ / Breakfast",
+    "price": "210",
+    "description": ""
+  },
+  {
+    "id": "item-22",
+    "name": "Special Nashf",
+    "amharicName": "ስፔሻል ናሽፍ",
+    "category": "ቁርስ / Breakfast",
+    "price": "300",
+    "description": ""
+  },
+  {
+    "id": "item-23",
+    "name": "Regular Nashf",
+    "amharicName": "የመደበኛ ናሽፍ",
+    "category": "ቁርስ / Breakfast",
+    "price": "230",
+    "description": ""
+  },
+  {
+    "id": "seed-42b199a3a375",
+    "name": "Fasting Cane Special",
+    "amharicName": "የፆም ካኔ ስፔሻል",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "1100",
+    "description": ""
+  },
+  {
+    "id": "seed-09ba1418b075",
+    "name": "Special Fasting Firfir",
+    "amharicName": "ስፔሻል የፆም ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "seed-0486411bf510",
+    "name": "Dirkosh Firfir",
+    "amharicName": "ድርቆሽ ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "240",
+    "description": ""
+  },
+  {
+    "id": "seed-ec43c9962167",
+    "name": "Gomen Kitifo",
+    "amharicName": "ጎመን ክትፎ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "270",
+    "description": ""
+  },
+  {
+    "id": "seed-42978c62d079",
+    "name": "Spageti With Silis",
+    "amharicName": "ፓስታ በስልስ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "seed-111e7b93d7e7",
+    "name": "Spageti With Vegitable",
+    "amharicName": "ፓስታ በአትክልት",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "250",
+    "description": ""
+  },
+  {
+    "id": "seed-cf98e5eb8ae4",
+    "name": "Rice With Vegitable",
+    "amharicName": "ሩዝ በአትክልት",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "250",
+    "description": ""
+  },
+  {
+    "id": "seed-3666d728bd72",
+    "name": "Potato Firfir",
+    "amharicName": "ድንች ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "250",
+    "description": ""
+  },
+  {
+    "id": "seed-e83a8045139a",
+    "name": "Special Potato Firfir",
+    "amharicName": "ስፔሻል ድንች ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "seed-494c948ad41d",
+    "name": "Fasting Firfir",
+    "amharicName": "የፆም ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "210",
+    "description": ""
+  },
+  {
+    "id": "seed-0aea2cda24d7",
+    "name": "Fasting Tibs",
+    "amharicName": "የፆም ጥብስ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "seed-983bef727e57",
+    "name": "Shiro",
+    "amharicName": "ሽሮ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "180",
+    "description": ""
+  },
+  {
+    "id": "seed-3bca4d5ed91a",
+    "name": "Shiro Lala",
+    "amharicName": "ሽሮ ላላ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "220",
+    "description": ""
+  },
+  {
+    "id": "seed-51736e786d3a",
+    "name": "Tegabino",
+    "amharicName": "ተጋቢኖ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "230",
+    "description": ""
+  },
+  {
+    "id": "seed-21d3c85c73bf",
+    "name": "Special Shiro",
+    "amharicName": "ስፔሻል ሽሮ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "seed-7a1384ffcc06",
+    "name": "Suf Fitfit",
+    "amharicName": "ሱፍ ፍትፍት",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "185",
+    "description": ""
+  },
+  {
+    "id": "seed-c926ffa92b57",
+    "name": "Carrot Firfir",
+    "amharicName": "ካሮት ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "185",
+    "description": ""
+  },
+  {
+    "id": "seed-f3820a602dce",
+    "name": "Spe Dirkosh Firfir",
+    "amharicName": "ስፔሻል ድርቆሽ ፍርፍር",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "seed-2bb31d9bd050",
+    "name": "Telba Fitfit",
+    "amharicName": "ተልባ ፍትፍት",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "200",
+    "description": ""
+  },
+  {
+    "id": "seed-e5d8eb9e8c3e",
+    "name": "Gomen Tibs",
+    "amharicName": "ጎመን ጥብስ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "220",
+    "description": ""
+  },
+  {
+    "id": "seed-214f54356afc",
+    "name": "Shiro With Gomen",
+    "amharicName": "ሽሮ በጎመን",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "seed-efc4f6843558",
+    "name": "Rice With Avocado",
+    "amharicName": "ሩዝ በአቮካዶ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "260",
+    "description": ""
+  },
+  {
+    "id": "seed-c3ae20bcea11",
+    "name": "Buffet",
+    "amharicName": "ቡፌ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "390",
+    "description": ""
+  },
+  {
+    "id": "item-24",
+    "name": "Tomato Salad",
+    "amharicName": "ቲማቲም ሰላጣ",
+    "category": "የጾም ምግቦች / Fasting Foods",
+    "price": "230",
+    "description": ""
+  },
+  {
+    "id": "item-25",
+    "name": "Canee Special",
+    "amharicName": "ካኔ ስፔሻል",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "1450",
+    "description": ""
+  },
+  {
+    "id": "item-26",
+    "name": "Menchet",
+    "amharicName": "መንቼት",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "400",
+    "description": ""
+  },
+  {
+    "id": "item-27",
+    "name": "Sheep Tibs",
+    "amharicName": "የበግ ጥብስ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "550",
+    "description": ""
+  },
+  {
+    "id": "item-28",
+    "name": "Special Tibs",
+    "amharicName": "ስፔሻል ጥብስ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "600",
+    "description": ""
+  },
+  {
+    "id": "item-29",
+    "name": "Tibs Firfir",
+    "amharicName": "ጥብስ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "490",
+    "description": ""
+  },
+  {
+    "id": "item-30",
+    "name": "Special Tibs Firfir",
+    "amharicName": "ስፔሻል ጥብስ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "530",
+    "description": ""
+  },
+  {
+    "id": "item-31",
+    "name": "Dulet",
+    "amharicName": "ዱሌት",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "390",
+    "description": ""
+  },
+  {
+    "id": "item-32",
+    "name": "Kitfo",
+    "amharicName": "ክትፎ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "650",
+    "description": ""
+  },
+  {
+    "id": "item-33",
+    "name": "Special Kitfo",
+    "amharicName": "ስፔሻል ክትፎ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "750",
+    "description": ""
+  },
+  {
+    "id": "item-34",
+    "name": "Meat Firfir",
+    "amharicName": "የስጋ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "350",
+    "description": ""
+  },
+  {
+    "id": "item-35",
+    "name": "Special Meat Firfir",
+    "amharicName": "ስፔሻል የስጋ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "390",
+    "description": ""
+  },
+  {
+    "id": "item-36",
+    "name": "Dirkosh Firfir",
+    "amharicName": "ድርቆሽ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "350",
+    "description": ""
+  },
+  {
+    "id": "item-37",
+    "name": "Dirkosh firfir with Kwanta",
+    "amharicName": "ድርቆሽ ፍርፍር በቋንጣ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "370",
+    "description": ""
+  },
+  {
+    "id": "item-38",
+    "name": "Spageti With Meat",
+    "amharicName": "ፓስታ በስጋ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "320",
+    "description": ""
+  },
+  {
+    "id": "item-39",
+    "name": "Rice With Meat",
+    "amharicName": "ሩዝ በስጋ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "320",
+    "description": ""
+  },
+  {
+    "id": "item-40",
+    "name": "Shiro Bozena",
+    "amharicName": "ሽሮ ቦዜና",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "290",
+    "description": ""
+  },
+  {
+    "id": "item-41",
+    "name": "Gomen With Meat",
+    "amharicName": "ጎመን በስጋ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "320",
+    "description": ""
+  },
+  {
+    "id": "item-42",
+    "name": "Qwanta Firfir",
+    "amharicName": "ቋንጣ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "370",
+    "description": ""
+  },
+  {
+    "id": "item-43",
+    "name": "S. Qwanta firfir",
+    "amharicName": "ስፔሻል ቋንጣ ፍርፍር",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "450",
+    "description": ""
+  },
+  {
+    "id": "item-44",
+    "name": "Grill Tibis",
+    "amharicName": "ግሪል ጥብስ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "550",
+    "description": ""
+  },
+  {
+    "id": "item-45",
+    "name": "Spageti With Karboran",
+    "amharicName": "ፓስታ ካርቦናራ",
+    "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "price": "395",
+    "description": ""
+  }
+]
