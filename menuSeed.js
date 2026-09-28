@@ -124,6 +124,29 @@ const parseMenuText = (rawText) => {
   try {
     return { data: JSON.parse(text), arrayCount: 1 };
   } catch (firstError) {
+    let depth = 0;
+    let inString = false;
+    let escaped = false;
+    for (const char of text) {
+      if (inString) {
+        if (escaped) escaped = false;
+        else if (char === '\\') escaped = true;
+        else if (char === '"') inString = false;
+        continue;
+      }
+      if (char === '"') inString = true;
+      else if (char === '[') depth += 1;
+      else if (char === ']') depth -= 1;
+      if (depth < 0) break;
+    }
+    if (depth > 0) {
+      try {
+        return { data: JSON.parse(`${text}${']'.repeat(depth)}`), arrayCount: 1, repaired: true };
+      } catch {
+        // Continue with the existing recovery for multiple top-level arrays.
+      }
+    }
+
     const chunks = extractTopLevelArrays(text);
     if (!chunks.length) throw firstError;
 
@@ -164,9 +187,10 @@ const loadSeedMenu = () => {
     return { file, items: [], skipped: [], notes: [], error: `Invalid JSON in ${file}: ${error.message}` };
   }
 
-  const list = Array.isArray(parsed)
+  const sourceList = Array.isArray(parsed)
     ? parsed
     : (Array.isArray(parsed?.menu) ? parsed.menu : (Array.isArray(parsed?.items) ? parsed.items : []));
+  const list = sourceList.flat(Infinity);
 
   const seenIds = new Set();
   const seenContent = new Set();

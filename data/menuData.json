@@ -542,5 +542,2054 @@
     "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
     "price": "395",
     "description": ""
+  },
+  [
+  {
+    "id": "item-1",
+    "name": "Special Duble burger",
+    "amharicName": "ስፔሻል ድብል በርገር",
+    "category": "በርገር / Burger",
+    "price": "605",
+    "description": "",
+    "order": 1
+  },
+  {
+    "id": "item-2",
+    "name": "Duble Burger",
+    "amharicName": "ድብል በርገር",
+    "category": "በርገር / Burger",
+    "price": "570",
+    "description": "",
+    "order": 2
+  },
+  {
+    "id": "item-3",
+    "name": "Special Burger",
+    "amharicName": "ስፔሻል በርገር",
+    "category": "በርገር / Burger",
+    "price": "515",
+    "description": "",
+    "order": 3
+  },
+  {
+    "id": "item-4",
+    "name": "Normal Burger",
+    "amharicName": "ኖርማል በርገር",
+    "category": "በርገር / Burger",
+    "price": "450",
+    "description": "",
+    "order": 4
+  },
+  {
+    "id": "item-5",
+    "name": "Cheese Burger",
+    "amharicName": "ቺዝ በርገር",
+    "category": "በርገር / Burger",
+    "price": "490",
+    "description": "",
+    "order": 5
+  },
+  {
+    "id": "item-6",
+    "name": "Chicken Burger",
+    "amharicName": "ቺክን በርገር",
+    "category": "በርገር / Burger",
+    "price": "520",
+    "description": "",
+    "order": 6
+  },
+  {
+    "id": "item-7",
+    "name": "Vegitable Burger",
+    "amharicName": "የአትክልት በርገር",
+    "category": "በርገር / Burger",
+    "price": "320",
+    "description": "",
+    "order": 7
+  },
+  {
+    "id": "item-8",
+    "name": "Berugeron",
+    "amharicName": "በርገሮን",
+    "category": "በርገር / Burger",
+    "price": "380",
+    "description": "",
+    "order": 8
+  },
+  {
+    "id": "item-9",
+    "name": "Special Club Sandwich",
+    "amharicName": "ስፔሻል ክለብ ሳንድዊች",
+    "category": "ስናክ / Snack",
+    "price": "520",
+    "description": "",
+    "order": 9
+  },
+  {
+    "id": "item-10",
+    "name": "Club Sandwich",
+    "amharicName": "ክለብ ሳንድዊች",
+    "category": "ስናክ / Snack",
+    "price": "480",
+    "description": "",
+    "order": 10
+  },
+  {
+    "id": "item-11",
+    "name": "Vegitable Sandwich",
+    "amharicName": "የአትክልት ሳንድዊች",
+    "category": "ስናክ / Snack",
+    "price": "210",
+    "description": "",
+    "order": 11
+  },
+  {
+    "id": "item-12",
+    "name": "Tuna Sandwich",
+    "amharicName": "ቱና ሳንድዊች",
+    "category": "ስናክ / Snack",
+    "price": "420",
+    "description": "",
+    "order": 12
+  },
+  {
+    "id": "item-13",
+    "name": "Chicken Rap",
+    "amharicName": "ቺክን ራፕ",
+    "category": "ስናክ / Snack",
+    "price": "480",
+    "description": "",
+    "order": 13
+  },
+  {
+    "id": "item-14",
+    "name": "Vegitable Rap",
+    "amharicName": "የአትክልት ራፕ",
+    "category": "ስናክ / Snack",
+    "price": "290",
+    "description": "",
+    "order": 14
+  },
+  {
+    "id": "item-15",
+    "name": "Beef Rap",
+    "amharicName": "ቢፍ ራፕ",
+    "category": "ስናክ / Snack",
+    "price": "420",
+    "description": "",
+    "order": 15
+  },
+  {
+    "id": "item-16",
+    "name": "French Fries",
+    "amharicName": "ፍሬንች ፍራይስ",
+    "category": "ስናክ / Snack",
+    "price": "250",
+    "description": "",
+    "order": 16
+  },
+  {
+    "id": "item-17",
+    "name": "Special Pizza",
+    "amharicName": "ስፔሻል ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "530",
+    "description": "",
+    "order": 17
+  },
+  {
+    "id": "item-18",
+    "name": "Buff Pizza",
+    "amharicName": "ቡፌ ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "499",
+    "description": "",
+    "order": 18
+  },
+  {
+    "id": "item-19",
+    "name": "Chicken Pizza",
+    "amharicName": "ቺክን ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "425",
+    "description": "",
+    "order": 19
+  },
+  {
+    "id": "item-20",
+    "name": "Tuna Pizza",
+    "amharicName": "ቱና ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "510",
+    "description": "",
+    "order": 20
+  },
+  {
+    "id": "item-21",
+    "name": "Vegitable Pizza",
+    "amharicName": "የአትክልት ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "350",
+    "description": "",
+    "order": 21
+  },
+  {
+    "id": "item-22",
+    "name": "Special Vegitable Pizza",
+    "amharicName": "ስፔሻል የአትክልት ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "420",
+    "description": "",
+    "order": 22
+  },
+  {
+    "id": "item-23",
+    "name": "Margarita Pizza",
+    "amharicName": "ማርጋሪታ ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "470",
+    "description": "",
+    "order": 23
+  },
+  {
+    "id": "item-24",
+    "name": "Abyssinia Pizza",
+    "amharicName": "አቢሲኒያ ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "530",
+    "description": "",
+    "order": 24
+  },
+  {
+    "id": "item-25",
+    "name": "Olive Pizza",
+    "amharicName": "ኦሊቭ ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "495",
+    "description": "",
+    "order": 25
+  },
+  {
+    "id": "item-26",
+    "name": "Special Fasting Pizza",
+    "amharicName": "ስፔሻል የፆም ፒዛ",
+    "category": "ፒዛ / Pizza",
+    "price": "530",
+    "description": "",
+    "order": 26
+  },
+  {
+    "id": "item-27",
+    "name": "Fish Firfir",
+    "amharicName": "አሳ ቁልስ",
+    "category": "አሳ / Fish",
+    "price": "450",
+    "description": "",
+    "order": 27
+  },
+  {
+    "id": "item-28",
+    "name": "Fish Gulash",
+    "amharicName": "አሳ ጉላሽ",
+    "category": "አሳ / Fish",
+    "price": "510",
+    "description": "",
+    "order": 28
+  },
+  {
+    "id": "item-29",
+    "name": "Fish Dulet",
+    "amharicName": "አሳ ዱሌት",
+    "category": "አሳ / Fish",
+    "price": "490",
+    "description": "",
+    "order": 29
+  },
+  {
+    "id": "item-30",
+    "name": "Fish Kotelate",
+    "amharicName": "አሳ ኮትሌት",
+    "category": "አሳ / Fish",
+    "price": "520",
+    "description": "",
+    "order": 30
+  },
+  {
+    "id": "item-31",
+    "name": "Grill Fish",
+    "amharicName": "ግሪል አሳ",
+    "category": "አሳ / Fish",
+    "price": "550",
+    "description": "",
+    "order": 31
   }
+,[
+  {
+    "id": "item-1",
+    "name": "Normal Juice",
+    "amharicName": "ኖርማል ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "185",
+    "description": "",
+    "order": 1
+  },
+  {
+    "id": "item-2",
+    "name": "Canne Special Juice",
+    "amharicName": "ካኔ ስፔሻል ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "230",
+    "description": "",
+    "order": 2
+  },
+  {
+    "id": "item-3",
+    "name": "Mango Juice",
+    "amharicName": "ማንጎ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "185",
+    "description": "",
+    "order": 3
+  },
+  {
+    "id": "item-4",
+    "name": "Avocado Juice",
+    "amharicName": "አቮካዶ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "185",
+    "description": "",
+    "order": 4
+  },
+  {
+    "id": "item-5",
+    "name": "Papaya Juice",
+    "amharicName": "ፓፓያ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "185",
+    "description": "",
+    "order": 5
+  },
+  {
+    "id": "item-6",
+    "name": "Watermelon Juice",
+    "amharicName": "ሀብሀብ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "185",
+    "description": "",
+    "order": 6
+  },
+  {
+    "id": "item-7",
+    "name": "Pineapple Juice",
+    "amharicName": "አናናስ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "220",
+    "description": "",
+    "order": 7
+  },
+  {
+    "id": "item-8",
+    "name": "Moka Juice",
+    "amharicName": "ሞካ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "225",
+    "description": "",
+    "order": 8
+  },
+  {
+    "id": "item-9",
+    "name": "Mixed Juice",
+    "amharicName": "ሚክስድ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "210",
+    "description": "",
+    "order": 9
+  },
+  {
+    "id": "item-10",
+    "name": "Fruit Panch",
+    "amharicName": "ፍሩት ፖንች",
+    "category": "ጁስ / Juice",
+    "price": "200",
+    "description": "",
+    "order": 10
+  },
+  {
+    "id": "item-11",
+    "name": "S. Fruit Panch",
+    "amharicName": "ስፔሻል ፍሩት ፖንች",
+    "category": "ጁስ / Juice",
+    "price": "450",
+    "description": "",
+    "order": 11
+  },
+  {
+    "id": "item-12",
+    "name": "Chocolate Milk Shak",
+    "amharicName": "ቸኮሌት ሚልክ ሼክ",
+    "category": "ጁስ / Juice",
+    "price": "250",
+    "description": "",
+    "order": 12
+  },
+  {
+    "id": "item-13",
+    "name": "Strawberry Shak",
+    "amharicName": "ስትሮቤሪ ሼክ",
+    "category": "ጁስ / Juice",
+    "price": "250",
+    "description": "",
+    "order": 13
+  },
+  {
+    "id": "item-14",
+    "name": "Strawberry Juice",
+    "amharicName": "ስትሮቤሪ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "230",
+    "description": "",
+    "order": 14
+  },
+  {
+    "id": "item-15",
+    "name": "Milk Shak",
+    "amharicName": "ሚልክ ሼክ",
+    "category": "ጁስ / Juice",
+    "price": "225",
+    "description": "",
+    "order": 15
+  },
+  {
+    "id": "item-16",
+    "name": "Banana Shak",
+    "amharicName": "ባናና ሼክ",
+    "category": "ጁስ / Juice",
+    "price": "240",
+    "description": "",
+    "order": 16
+  },
+  {
+    "id": "item-17",
+    "name": "Carrot juice",
+    "amharicName": "ካሮት ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "170",
+    "description": "",
+    "order": 17
+  },
+  {
+    "id": "item-18",
+    "name": "Sweet Juice",
+    "amharicName": "ስዊት ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "225",
+    "description": "",
+    "order": 18
+  },
+  {
+    "id": "item-19",
+    "name": "Red Juice",
+    "amharicName": "ሬድ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "180",
+    "description": "",
+    "order": 19
+  },
+  {
+    "id": "item-20",
+    "name": "Guava Juice",
+    "amharicName": "ጉአቫ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "170",
+    "description": "",
+    "order": 20
+  },
+  {
+    "id": "item-21",
+    "name": "Orange Juice",
+    "amharicName": "ኦሬንጅ ጁስ",
+    "category": "ጁስ / Juice",
+    "price": "220",
+    "description": "",
+    "order": 21
+  },
+  {
+    "id": "item-22",
+    "name": "Fruit Salad",
+    "amharicName": "ፍሩት ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "370",
+    "description": "",
+    "order": 22
+  },
+  {
+    "id": "item-23",
+    "name": "Mixed Salad",
+    "amharicName": "ሚክስድ ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "300",
+    "description": "",
+    "order": 23
+  },
+  {
+    "id": "item-24",
+    "name": "Avocado Salad",
+    "amharicName": "አቮካዶ ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "290",
+    "description": "",
+    "order": 24
+  },
+  {
+    "id": "item-25",
+    "name": "Tuna Salad",
+    "amharicName": "ቱና ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "350",
+    "description": "",
+    "order": 25
+  },
+  {
+    "id": "item-26",
+    "name": "Potato Salad",
+    "amharicName": "ድንች ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "270",
+    "description": "",
+    "order": 26
+  },
+  {
+    "id": "item-27",
+    "name": "Russian Salad",
+    "amharicName": "ራሺያን ሰላጣ",
+    "category": "ሰላጣ / Salad",
+    "price": "400",
+    "description": "",
+    "order": 27
+  }
+],[
+  {
+    "id": "item-1",
+    "name": "Chicken Soup",
+    "amharicName": "ዶሮ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "370",
+    "description": "",
+    "order": 1
+  },
+  {
+    "id": "item-2",
+    "name": "Vegitable Soup",
+    "amharicName": "የአትክልት ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "220",
+    "description": "",
+    "order": 2
+  },
+  {
+    "id": "item-3",
+    "name": "Minstroni Soup",
+    "amharicName": "ሚኒስትሮኒ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "260",
+    "description": "",
+    "order": 3
+  },
+  {
+    "id": "item-4",
+    "name": "Tomato Soup",
+    "amharicName": "ቲማቲም ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "200",
+    "description": "",
+    "order": 4
+  },
+  {
+    "id": "item-5",
+    "name": "Fish Soup",
+    "amharicName": "አሳ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "355",
+    "description": "",
+    "order": 5
+  },
+  {
+    "id": "item-6",
+    "name": "Meat Soup",
+    "amharicName": "የስጋ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "350",
+    "description": "",
+    "order": 6
+  },
+  {
+    "id": "item-7",
+    "name": "Soft Drink",
+    "amharicName": "ለስላሳ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "70",
+    "description": "",
+    "order": 7
+  },
+  {
+    "id": "item-8",
+    "name": "1 Liter Water",
+    "amharicName": "1 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "55",
+    "description": "",
+    "order": 8
+  },
+  {
+    "id": "item-9",
+    "name": "2 Liter Water",
+    "amharicName": "2 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "70",
+    "description": "",
+    "order": 9
+  },
+  {
+    "id": "item-10",
+    "name": "0.5 Liter Water",
+    "amharicName": "0.5 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "45",
+    "description": "",
+    "order": 10
+  },
+  {
+    "id": "item-11",
+    "name": "Malta",
+    "amharicName": "ማልታ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "95",
+    "description": "",
+    "order": 11
+  },
+  {
+    "id": "item-12",
+    "name": "Tea",
+    "amharicName": "ሻይ",
+    "category": "ተጨማሪ / Extra",
+    "price": "90",
+    "description": "",
+    "order": 12
+  },
+  {
+    "id": "item-13",
+    "name": "Vision Tape",
+    "amharicName": "የቪዥን ቴፕ",
+    "category": "ተጨማሪ / Extra",
+    "price": "30",
+    "description": "",
+    "order": 13
+  },
+  {
+    "id": "item-14",
+    "name": "Tsebel",
+    "amharicName": "ጸበል",
+    "category": "ተጨማሪ / Extra",
+    "price": "35",
+    "description": "",
+    "order": 14
+  },
+  {
+    "id": "item-15",
+    "name": "Indomie",
+    "amharicName": "እንዶሚ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 15
+  },
+  {
+    "id": "item-16",
+    "name": "Mayonnaise",
+    "amharicName": "ማዮኔዝ",
+    "category": "ተጨማሪ / Extra",
+    "price": "100",
+    "description": "",
+    "order": 16
+  },
+  {
+    "id": "item-17",
+    "name": "Almond",
+    "amharicName": "አልመንድም",
+    "category": "ተጨማሪ / Extra",
+    "price": "45",
+    "description": "",
+    "order": 17
+  },
+  {
+    "id": "item-18",
+    "name": "Plastic",
+    "amharicName": "ፕላስቲክ",
+    "category": "ተጨማሪ / Extra",
+    "price": "55",
+    "description": "",
+    "order": 18
+  },
+  {
+    "id": "item-19",
+    "name": "Extra Oil",
+    "amharicName": "ዘይት ተጨማሪ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 19
+  },
+  {
+    "id": "item-20",
+    "name": "Extra Coffee",
+    "amharicName": "ቡና ተጨማሪ",
+    "category": "ተጨማሪ / Extra",
+    "price": "20",
+    "description": "",
+    "order": 20
+  },
+  {
+    "id": "item-21",
+    "name": "Turmeric",
+    "amharicName": "እርድ",
+    "category": "ተጨማሪ / Extra",
+    "price": "70",
+    "description": "",
+    "order": 21
+  },
+  {
+    "id": "item-22",
+    "name": "Mayonnaise Cup",
+    "amharicName": "ማዮኔዝ ካፕ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 22
+  },
+  {
+    "id": "item-23",
+    "name": "Egg",
+    "amharicName": "እንቁላል",
+    "category": "ተጨማሪ / Extra",
+    "price": "50",
+    "description": "",
+    "order": 23
+  },
+  {
+    "id": "item-24",
+    "name": "Special Mojito",
+    "amharicName": "ስፔሻል ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "185",
+    "description": "",
+    "order": 24
+  },
+  {
+    "id": "item-25",
+    "name": "Strawberry Mojito",
+    "amharicName": "ስትሮቤሪ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 25
+  },
+  {
+    "id": "item-26",
+    "name": "Orange Mojito",
+    "amharicName": "ኦሬንጅ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "160",
+    "description": "",
+    "order": 26
+  },
+  {
+    "id": "item-27",
+    "name": "Spe Ambo water with Hony",
+    "amharicName": "ስፔሻል አምቦ ውሀ በማር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 27
+  },
+  {
+    "id": "item-28",
+    "name": "Ambo water with Hony",
+    "amharicName": "አምቦ ውሀ በማር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "125",
+    "description": "",
+    "order": 28
+  },
+  {
+    "id": "item-29",
+    "name": "Ice Coffee",
+    "amharicName": "አይስ ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "120",
+    "description": "",
+    "order": 29
+  },
+  {
+    "id": "item-30",
+    "name": "Ice Latt",
+    "amharicName": "አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "180",
+    "description": "",
+    "order": 30
+  },
+  {
+    "id": "item-31",
+    "name": "Caramel Ice Coffee",
+    "amharicName": "ካራሜል አይስ ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "180",
+    "description": "",
+    "order": 31
+  },
+  {
+    "id": "item-32",
+    "name": "Ice Frapachino",
+    "amharicName": "አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 32
+  },
+  {
+    "id": "item-33",
+    "name": "Str Ice Frapachino",
+    "amharicName": "ስትሮቤሪ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 33
+  },
+  {
+    "id": "item-34",
+    "name": "Orange Ice Frapachino",
+    "amharicName": "ኦሬንጅ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 34
+  },
+  {
+    "id": "item-35",
+    "name": "Pinapple Ice Frapachino",
+    "amharicName": "አናናስ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 35
+  },
+  {
+    "id": "item-36",
+    "name": "Special Ice Frapachino",
+    "amharicName": "ስፔሻል አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "210",
+    "description": "",
+    "order": 36
+  },
+  {
+    "id": "item-37",
+    "name": "Special Mixed Ice Lati",
+    "amharicName": "ስፔሻል ሚክስድ አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "220",
+    "description": "",
+    "order": 37
+  },
+  {
+    "id": "item-38",
+    "name": "Avatar",
+    "amharicName": "አቫታር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 38
+  },
+  {
+    "id": "item-39",
+    "name": "Titanic Mojito",
+    "amharicName": "ታይታኒክ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 39
+  },
+  {
+    "id": "item-40",
+    "name": "Lemon Mojito",
+    "amharicName": "ሌመን ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 40
+  },
+  {
+    "id": "item-41",
+    "name": "Love Mojito",
+    "amharicName": "ላቭ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 41
+  },
+  {
+    "id": "item-42",
+    "name": "Smoothie Mojito",
+    "amharicName": "ስሙዚ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 42
+  },
+  {
+    "id": "item-43",
+    "name": "Mixed Ice Lati",
+    "amharicName": "ሚክስድ አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "185",
+    "description": "",
+    "order": 43
+  },
+  {
+    "id": "item-44",
+    "name": "Yame Mojito",
+    "amharicName": "ያሜ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 44
+  },
+  {
+    "id": "item-45",
+    "name": "Sensat Mojito",
+    "amharicName": "ሰንሴት ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 45
+  },
+  {
+    "id": "item-46",
+    "name": "Special Coffee",
+    "amharicName": "ስፔሻል ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "160",
+    "description": "",
+    "order": 46
+  },
+  {
+    "id": "item-47",
+    "name": "King Mojito",
+    "amharicName": "ኪንግ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 47
+  },
+  {
+    "id": "item-48",
+    "name": "Caramel Ice Latt",
+    "amharicName": "ካራሜል አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "200",
+    "description": "",
+    "order": 48
+  },
+  {
+    "id": "item-49",
+    "name": "Watermelon Mojito",
+    "amharicName": "ሀብሀብ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 49
+  }
+],[
+  {
+    "id": "item-1",
+    "name": "Chicken Soup",
+    "amharicName": "ዶሮ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "370",
+    "description": "",
+    "order": 1
+  },
+  {
+    "id": "item-2",
+    "name": "Vegitable Soup",
+    "amharicName": "የአትክልት ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "220",
+    "description": "",
+    "order": 2
+  },
+  {
+    "id": "item-3",
+    "name": "Minstroni Soup",
+    "amharicName": "ሚኒስትሮኒ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "260",
+    "description": "",
+    "order": 3
+  },
+  {
+    "id": "item-4",
+    "name": "Tomato Soup",
+    "amharicName": "ቲማቲም ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "200",
+    "description": "",
+    "order": 4
+  },
+  {
+    "id": "item-5",
+    "name": "Fish Soup",
+    "amharicName": "አሳ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "355",
+    "description": "",
+    "order": 5
+  },
+  {
+    "id": "item-6",
+    "name": "Meat Soup",
+    "amharicName": "የስጋ ሱፕ",
+    "category": "ሱፕ / Soup",
+    "price": "350",
+    "description": "",
+    "order": 6
+  },
+  {
+    "id": "item-7",
+    "name": "Soft Drink",
+    "amharicName": "ለስላሳ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "70",
+    "description": "",
+    "order": 7
+  },
+  {
+    "id": "item-8",
+    "name": "1 Liter Water",
+    "amharicName": "1 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "55",
+    "description": "",
+    "order": 8
+  },
+  {
+    "id": "item-9",
+    "name": "2 Liter Water",
+    "amharicName": "2 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "70",
+    "description": "",
+    "order": 9
+  },
+  {
+    "id": "item-10",
+    "name": "0.5 Liter Water",
+    "amharicName": "0.5 ሊትር ውሃ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "45",
+    "description": "",
+    "order": 10
+  },
+  {
+    "id": "item-11",
+    "name": "Malta",
+    "amharicName": "ማልታ",
+    "category": "ለስላሳ መጠጦች / Soft Drinks",
+    "price": "95",
+    "description": "",
+    "order": 11
+  },
+  {
+    "id": "item-12",
+    "name": "Tea",
+    "amharicName": "ሻይ",
+    "category": "ተጨማሪ / Extra",
+    "price": "90",
+    "description": "",
+    "order": 12
+  },
+  {
+    "id": "item-13",
+    "name": "Vision Tape",
+    "amharicName": "የቪዥን ቴፕ",
+    "category": "ተጨማሪ / Extra",
+    "price": "30",
+    "description": "",
+    "order": 13
+  },
+  {
+    "id": "item-14",
+    "name": "Tsebel",
+    "amharicName": "ጸበል",
+    "category": "ተጨማሪ / Extra",
+    "price": "35",
+    "description": "",
+    "order": 14
+  },
+  {
+    "id": "item-15",
+    "name": "Indomie",
+    "amharicName": "እንዶሚ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 15
+  },
+  {
+    "id": "item-16",
+    "name": "Mayonnaise",
+    "amharicName": "ማዮኔዝ",
+    "category": "ተጨማሪ / Extra",
+    "price": "100",
+    "description": "",
+    "order": 16
+  },
+  {
+    "id": "item-17",
+    "name": "Almond",
+    "amharicName": "አልመንድም",
+    "category": "ተጨማሪ / Extra",
+    "price": "45",
+    "description": "",
+    "order": 17
+  },
+  {
+    "id": "item-18",
+    "name": "Plastic",
+    "amharicName": "ፕላስቲክ",
+    "category": "ተጨማሪ / Extra",
+    "price": "55",
+    "description": "",
+    "order": 18
+  },
+  {
+    "id": "item-19",
+    "name": "Extra Oil",
+    "amharicName": "ዘይት ተጨማሪ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 19
+  },
+  {
+    "id": "item-20",
+    "name": "Extra Coffee",
+    "amharicName": "ቡና ተጨማሪ",
+    "category": "ተጨማሪ / Extra",
+    "price": "20",
+    "description": "",
+    "order": 20
+  },
+  {
+    "id": "item-21",
+    "name": "Turmeric",
+    "amharicName": "እርድ",
+    "category": "ተጨማሪ / Extra",
+    "price": "70",
+    "description": "",
+    "order": 21
+  },
+  {
+    "id": "item-22",
+    "name": "Mayonnaise Cup",
+    "amharicName": "ማዮኔዝ ካፕ",
+    "category": "ተጨማሪ / Extra",
+    "price": "40",
+    "description": "",
+    "order": 22
+  },
+  {
+    "id": "item-23",
+    "name": "Egg",
+    "amharicName": "እንቁላል",
+    "category": "ተጨማሪ / Extra",
+    "price": "50",
+    "description": "",
+    "order": 23
+  },
+  {
+    "id": "item-24",
+    "name": "Special Mojito",
+    "amharicName": "ስፔሻል ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "185",
+    "description": "",
+    "order": 24
+  },
+  {
+    "id": "item-25",
+    "name": "Strawberry Mojito",
+    "amharicName": "ስትሮቤሪ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 25
+  },
+  {
+    "id": "item-26",
+    "name": "Orange Mojito",
+    "amharicName": "ኦሬንጅ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "160",
+    "description": "",
+    "order": 26
+  },
+  {
+    "id": "item-27",
+    "name": "Spe Ambo water with Hony",
+    "amharicName": "ስፔሻል አምቦ ውሀ በማር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 27
+  },
+  {
+    "id": "item-28",
+    "name": "Ambo water with Hony",
+    "amharicName": "አምቦ ውሀ በማር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "125",
+    "description": "",
+    "order": 28
+  },
+  {
+    "id": "item-29",
+    "name": "Ice Coffee",
+    "amharicName": "አይስ ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "120",
+    "description": "",
+    "order": 29
+  },
+  {
+    "id": "item-30",
+    "name": "Ice Latt",
+    "amharicName": "አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "180",
+    "description": "",
+    "order": 30
+  },
+  {
+    "id": "item-31",
+    "name": "Caramel Ice Coffee",
+    "amharicName": "ካራሜል አይስ ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "180",
+    "description": "",
+    "order": 31
+  },
+  {
+    "id": "item-32",
+    "name": "Ice Frapachino",
+    "amharicName": "አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 32
+  },
+  {
+    "id": "item-33",
+    "name": "Str Ice Frapachino",
+    "amharicName": "ስትሮቤሪ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 33
+  },
+  {
+    "id": "item-34",
+    "name": "Orange Ice Frapachino",
+    "amharicName": "ኦሬንጅ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 34
+  },
+  {
+    "id": "item-35",
+    "name": "Pinapple Ice Frapachino",
+    "amharicName": "አናናስ አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "170",
+    "description": "",
+    "order": 35
+  },
+  {
+    "id": "item-36",
+    "name": "Special Ice Frapachino",
+    "amharicName": "ስፔሻል አይስ ፍራፓቺኖ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "210",
+    "description": "",
+    "order": 36
+  },
+  {
+    "id": "item-37",
+    "name": "Special Mixed Ice Lati",
+    "amharicName": "ስፔሻል ሚክስድ አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "220",
+    "description": "",
+    "order": 37
+  },
+  {
+    "id": "item-38",
+    "name": "Avatar",
+    "amharicName": "አቫታር",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 38
+  },
+  {
+    "id": "item-39",
+    "name": "Titanic Mojito",
+    "amharicName": "ታይታኒክ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 39
+  },
+  {
+    "id": "item-40",
+    "name": "Lemon Mojito",
+    "amharicName": "ሌመን ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 40
+  },
+  {
+    "id": "item-41",
+    "name": "Love Mojito",
+    "amharicName": "ላቭ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 41
+  },
+  {
+    "id": "item-42",
+    "name": "Smoothie Mojito",
+    "amharicName": "ስሙዚ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "165",
+    "description": "",
+    "order": 42
+  },
+  {
+    "id": "item-43",
+    "name": "Mixed Ice Lati",
+    "amharicName": "ሚክስድ አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "185",
+    "description": "",
+    "order": 43
+  },
+  {
+    "id": "item-44",
+    "name": "Yame Mojito",
+    "amharicName": "ያሜ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 44
+  },
+  {
+    "id": "item-45",
+    "name": "Sensat Mojito",
+    "amharicName": "ሰንሴት ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 45
+  },
+  {
+    "id": "item-46",
+    "name": "Special Coffee",
+    "amharicName": "ስፔሻል ቡና",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "160",
+    "description": "",
+    "order": 46
+  },
+  {
+    "id": "item-47",
+    "name": "King Mojito",
+    "amharicName": "ኪንግ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "175",
+    "description": "",
+    "order": 47
+  },
+  {
+    "id": "item-48",
+    "name": "Caramel Ice Latt",
+    "amharicName": "ካራሜል አይስ ላቴ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "200",
+    "description": "",
+    "order": 48
+  },
+  {
+    "id": "item-49",
+    "name": "Watermelon Mojito",
+    "amharicName": "ሀብሀብ ሞሂቶ",
+    "category": "ቀዝቃዛ መጠጦች / Cold Drinks",
+    "price": "150",
+    "description": "",
+    "order": 49
+  }
+],[
+  {
+    "id": "item-1",
+    "name": "Tea",
+    "amharicName": "ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "60",
+    "description": "",
+    "order": 1
+  },
+  {
+    "id": "item-2",
+    "name": "Special Tea",
+    "amharicName": "ስፔሻል ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "95",
+    "description": "",
+    "order": 2
+  },
+  {
+    "id": "item-3",
+    "name": "Lemon Tea",
+    "amharicName": "ሎሚ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "40",
+    "description": "",
+    "order": 3
+  },
+  {
+    "id": "item-4",
+    "name": "Carrot Tea",
+    "amharicName": "ካሮት ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "40",
+    "description": "",
+    "order": 4
+  },
+  {
+    "id": "item-5",
+    "name": "Moringa Tea",
+    "amharicName": "ሞሪንጋ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "50",
+    "description": "",
+    "order": 5
+  },
+  {
+    "id": "item-6",
+    "name": "Green Tea",
+    "amharicName": "ግሪን ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 6
+  },
+  {
+    "id": "item-7",
+    "name": "Hibiscus Tea",
+    "amharicName": "ሂቢስከስ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "50",
+    "description": "",
+    "order": 7
+  },
+  {
+    "id": "item-8",
+    "name": "Orange Tea",
+    "amharicName": "ኦሬንጅ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 8
+  },
+  {
+    "id": "item-9",
+    "name": "Mango Tea",
+    "amharicName": "ማንጎ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 9
+  },
+  {
+    "id": "item-10",
+    "name": "Pineapple Tea",
+    "amharicName": "አናናስ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 10
+  },
+  {
+    "id": "item-11",
+    "name": "Strawberry Tea",
+    "amharicName": "ስትሮቤሪ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 11
+  },
+  {
+    "id": "item-12",
+    "name": "Cinnamon Tea",
+    "amharicName": "ቀረፋ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "45",
+    "description": "",
+    "order": 12
+  },
+  {
+    "id": "item-13",
+    "name": "Tea Sprite",
+    "amharicName": "ሻይ ስፕራይት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "65",
+    "description": "",
+    "order": 13
+  },
+  {
+    "id": "item-14",
+    "name": "Cultural Coffee",
+    "amharicName": "ባህላዊ ቡና",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "50",
+    "description": "",
+    "order": 14
+  },
+  {
+    "id": "item-15",
+    "name": "Machine Coffee",
+    "amharicName": "ማሽን ቡና",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "60",
+    "description": "",
+    "order": 15
+  },
+  {
+    "id": "item-16",
+    "name": "Coffee Milk",
+    "amharicName": "ቡና በወተት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "65",
+    "description": "",
+    "order": 16
+  },
+  {
+    "id": "item-17",
+    "name": "Macchiato",
+    "amharicName": "ማኪያቶ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "80",
+    "description": "",
+    "order": 17
+  },
+  {
+    "id": "item-18",
+    "name": "Fasting Macchiato",
+    "amharicName": "የፆም ማኪያቶ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "75",
+    "description": "",
+    "order": 18
+  },
+  {
+    "id": "item-19",
+    "name": "Double Macchiato",
+    "amharicName": "ድብል ማኪያቶ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "120",
+    "description": "",
+    "order": 19
+  },
+  {
+    "id": "item-20",
+    "name": "Peanut",
+    "amharicName": "ፒናት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "180",
+    "description": "",
+    "order": 20
+  },
+  {
+    "id": "item-21",
+    "name": "Special Peanut",
+    "amharicName": "ስፔሻል ፒናት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "210",
+    "description": "",
+    "order": 21
+  },
+  {
+    "id": "item-22",
+    "name": "Peanut With Tea",
+    "amharicName": "ፒናት በሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "70",
+    "description": "",
+    "order": 22
+  },
+  {
+    "id": "item-23",
+    "name": "Peanut With Milk",
+    "amharicName": "ፒናት በወተት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "90",
+    "description": "",
+    "order": 23
+  },
+  {
+    "id": "item-24",
+    "name": "Peanut With Coffee",
+    "amharicName": "ፒናት በቡና",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "80",
+    "description": "",
+    "order": 24
+  },
+  {
+    "id": "item-25",
+    "name": "Cappuccino",
+    "amharicName": "ካፑቺኖ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "130",
+    "description": "",
+    "order": 25
+  },
+  {
+    "id": "item-26",
+    "name": "Ginger Tea",
+    "amharicName": "ጂንጅር ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "110",
+    "description": "",
+    "order": 26
+  },
+  {
+    "id": "item-27",
+    "name": "Milk Chocolate",
+    "amharicName": "ሚልክ ቸኮሌት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "110",
+    "description": "",
+    "order": 27
+  },
+  {
+    "id": "item-28",
+    "name": "Chocolate Tea",
+    "amharicName": "ቸኮሌት ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "90",
+    "description": "",
+    "order": 28
+  },
+  {
+    "id": "item-29",
+    "name": "Coffee With Butter",
+    "amharicName": "ቡና በቅቤ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "90",
+    "description": "",
+    "order": 29
+  },
+  {
+    "id": "item-30",
+    "name": "Special Hot Chocolate",
+    "amharicName": "ስፔሻል ሆት ቸኮሌት",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "135",
+    "description": "",
+    "order": 30
+  },
+  {
+    "id": "item-31",
+    "name": "Natural Spe Tea",
+    "amharicName": "ስፔሻል ተፈጥሮ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "125",
+    "description": "",
+    "order": 31
+  },
+  {
+    "id": "item-32",
+    "name": "Cinnamon Butter Tea",
+    "amharicName": "ቀረፋ በቅቤ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "105",
+    "description": "",
+    "order": 32
+  },
+  {
+    "id": "item-33",
+    "name": "Machine Coffee",
+    "amharicName": "ማሽን ቡና",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "90",
+    "description": "",
+    "order": 33
+  },
+  {
+    "id": "item-34",
+    "name": "Canee Tea",
+    "amharicName": "ካኔ ሻይ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "95",
+    "description": "",
+    "order": 34
+  },
+  {
+    "id": "item-35",
+    "name": "Clove",
+    "amharicName": "ቅርንፉድ",
+    "category": "ትኩስ መጠጦች / Hot Drinks",
+    "price": "95",
+    "description": "",
+    "order": 35
+  },
+  {
+    "id": "item-36",
+    "name": "Tiramisu Cup",
+    "amharicName": "ቲራሚሱ ካፕ",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "80",
+    "description": "",
+    "order": 36
+  },
+  {
+    "id": "item-37",
+    "name": "Caramel",
+    "amharicName": "ካራሜል",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "80",
+    "description": "",
+    "order": 37
+  },
+  {
+    "id": "item-38",
+    "name": "Chocolate",
+    "amharicName": "ቸኮሌት",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "110",
+    "description": "",
+    "order": 38
+  },
+  {
+    "id": "item-39",
+    "name": "Strawberry",
+    "amharicName": "ስትሮቤሪ",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "80",
+    "description": "",
+    "order": 39
+  },
+  {
+    "id": "item-40",
+    "name": "Black Forest",
+    "amharicName": "ብላክ ፎረስት",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "110",
+    "description": "",
+    "order": 40
+  },
+  {
+    "id": "item-41",
+    "name": "Tiramisu",
+    "amharicName": "ቲራሚሱ",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "80",
+    "description": "",
+    "order": 41
+  },
+  {
+    "id": "item-42",
+    "name": "California",
+    "amharicName": "ካሊፎርኒያ",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "80",
+    "description": "",
+    "order": 42
+  },
+  {
+    "id": "item-43",
+    "name": "White Forest",
+    "amharicName": "ኋይት ፎረስት",
+    "category": "ኬክ በካፕ / Dessert Cup",
+    "price": "110",
+    "description": "",
+    "order": 43
+  },
+  {
+    "id": "item-44",
+    "name": "Bisklet",
+    "amharicName": "ቢስክሌት",
+    "category": "ኬክ / Cake",
+    "price": "100",
+    "description": "",
+    "order": 44
+  },
+  {
+    "id": "item-45",
+    "name": "Coconut",
+    "amharicName": "ኮኮናት",
+    "category": "ኬክ / Cake",
+    "price": "120",
+    "description": "",
+    "order": 45
+  },
+  {
+    "id": "item-46",
+    "name": "Muffin",
+    "amharicName": "ማፊን",
+    "category": "ኬክ / Cake",
+    "price": "110",
+    "description": "",
+    "order": 46
+  },
+  {
+    "id": "item-47",
+    "name": "Vanilla",
+    "amharicName": "ቫኒላ",
+    "category": "ኬክ / Cake",
+    "price": "100",
+    "description": "",
+    "order": 47
+  },
+  {
+    "id": "item-48",
+    "name": "Donut",
+    "amharicName": "ዶናት",
+    "category": "ኬክ / Cake",
+    "price": "110",
+    "description": "",
+    "order": 48
+  },
+  {
+    "id": "item-49",
+    "name": "Double Chocolate",
+    "amharicName": "፪ኤል ቸኮሌት",
+    "category": "ኬክ / Cake",
+    "price": "130",
+    "description": "",
+    "order": 49
+  },
+  {
+    "id": "item-50",
+    "name": "Double Strawberry",
+    "amharicName": "፪ኤል ስትሮቤሪ",
+    "category": "ኬክ / Cake",
+    "price": "130",
+    "description": "",
+    "order": 50
+  },
+  {
+    "id": "item-51",
+    "name": "Tekrosh",
+    "amharicName": "ቴክሮሽ",
+    "category": "ኬክ / Pastry Treats",
+    "price": "55",
+    "description": "",
+    "order": 51
+  },
+  {
+    "id": "item-52",
+    "name": "Redberry",
+    "amharicName": "ሬድቤሪ",
+    "category": "ኬክ / Pastry Treats",
+    "price": "55",
+    "description": "",
+    "order": 52
+  },
+  {
+    "id": "item-53",
+    "name": "Vanilla",
+    "amharicName": "ቫኒላ",
+    "category": "ኬክ / Pastry Treats",
+    "price": "50",
+    "description": "",
+    "order": 53
+  },
+  {
+    "id": "item-54",
+    "name": "Caramel",
+    "amharicName": "ካራሜል",
+    "category": "ኬክ / Pastry Treats",
+    "price": "45",
+    "description": "",
+    "order": 54
+  },
+  {
+    "id": "item-55",
+    "name": "Donut",
+    "amharicName": "ዶናት",
+    "category": "ኬክ / Pastry Treats",
+    "price": "40",
+    "description": "",
+    "order": 55
+  },
+  {
+    "id": "item-56",
+    "name": "Cake",
+    "amharicName": "ኬክ",
+    "category": "ኬክ / Pastry Treats",
+    "price": "50",
+    "description": "",
+    "order": 56
+  },
+  {
+    "id": "item-57",
+    "name": "Banana Cake",
+    "amharicName": "ባናና ኬክ",
+    "category": "ኬክ / Pastry Treats",
+    "price": "35",
+    "description": "",
+    "order": 57
+  },
+  {
+    "id": "item-58",
+    "name": "Special Torta 1kg",
+    "amharicName": "ስፔሻል ቶርታ 1kg",
+    "category": "ስፔሻል ቶርታ / Special Torta",
+    "price": "950",
+    "description": "",
+    "order": 58
+  },
+  {
+    "id": "item-59",
+    "name": "Special Torta 1.5kg",
+    "amharicName": "ስፔሻል ቶርታ 1.5kg",
+    "category": "ስፔሻል ቶርታ / Special Torta",
+    "price": "1350",
+    "description": "",
+    "order": 59
+  },
+  {
+    "id": "item-60",
+    "name": "Special Torta 2kg",
+    "amharicName": "ስፔሻል ቶርታ 2kg",
+    "category": "ስፔሻል ቶርታ / Special Torta",
+    "price": "1900",
+    "description": "",
+    "order": 60
+  },
+  {
+    "id": "item-61",
+    "name": "Special Torta 3kg",
+    "amharicName": "ስፔሻል ቶርታ 3kg",
+    "category": "ስፔሻል ቶርታ / Special Torta",
+    "price": "2400",
+    "description": "",
+    "order": 61
+  },
+  {
+    "id": "item-62",
+    "name": "Special Torta 4kg",
+    "amharicName": "ስፔሻል ቶርታ 4kg",
+    "category": "ስፔሻል ቶርታ / Special Torta",
+    "price": "3500",
+    "description": "",
+    "order": 62
+  },
+  {
+    "id": "item-63",
+    "name": "Torta Cake 1kg",
+    "amharicName": "ቶርታ ኬክ 1kg",
+    "category": "ቶርታ ኬክ / Torta Cake",
+    "price": "1100",
+    "description": "",
+    "order": 63
+  },
+  {
+    "id": "item-64",
+    "name": "Torta Cake 1.5kg",
+    "amharicName": "ቶርታ ኬክ 1.5kg",
+    "category": "ቶርታ ኬክ / Torta Cake",
+    "price": "1550",
+    "description": "",
+    "order": 64
+  },
+  {
+    "id": "item-65",
+    "name": "Torta Cake 2kg",
+    "amharicName": "ቶርታ ኬክ 2kg",
+    "category": "ቶርታ ኬክ / Torta Cake",
+    "price": "1900",
+    "description": "",
+    "order": 65
+  },
+  {
+    "id": "item-66",
+    "name": "Torta Cake 3kg",
+    "amharicName": "ቶርታ ኬክ 3kg",
+    "category": "ቶርታ ኬክ / Torta Cake",
+    "price": "2400",
+    "description": "",
+    "order": 66
+  },
+  {
+    "id": "item-67",
+    "name": "Torta Cake 4kg",
+    "amharicName": "ቶርታ ኬክ 4kg",
+    "category": "ቶርታ ኬክ / Torta Cake",
+    "price": "3200",
+    "description": "",
+    "order": 67
+  },
+  {
+    "id": "item-68",
+    "name": "Fondant Cake 1kg",
+    "amharicName": "ፎንዳንት ኬክ 1kg",
+    "category": "ፎንዳንት ኬክ / Fondant Cake",
+    "price": "1000",
+    "description": "",
+    "order": 68
+  },
+  {
+    "id": "item-69",
+    "name": "Cake 1/4 kg",
+    "amharicName": "ኬክ 1/4 kg",
+    "category": "ኬክ በኪሎ / Cake by Weight",
+    "price": "200",
+    "description": "",
+    "order": 69
+  },
+  {
+    "id": "item-70",
+    "name": "Cake 1/2 kg",
+    "amharicName": "ኬክ 1/2 kg",
+    "category": "ኬክ በኪሎ / Cake by Weight",
+    "price": "300",
+    "description": "",
+    "order": 70
+  },
+  {
+    "id": "item-71",
+    "name": "Cake 1 kg",
+    "amharicName": "ኬክ 1 kg",
+    "category": "ኬክ በኪሎ / Cake by Weight",
+    "price": "600",
+    "description": "",
+    "order": 71
+  }
+]
 ]
