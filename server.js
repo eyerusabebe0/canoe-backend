@@ -15,6 +15,7 @@ const {
   DEFAULT_CATEGORIES,
   canonicalCategoryName,
   findSeedFile,
+  hashId,
   loadSeedMenu,
   repairCategoryKeys,
 } = require('./menuSeed');
@@ -243,18 +244,41 @@ const seedCatalogIfEmpty = async () => {
     console.log(`Seeded ${DEFAULT_CATEGORIES.length} default categories.`);
   }
 
-  if (await MenuItem.countDocuments() === 0) {
-    const { file, items, skipped, notes, error } = loadSeedMenu();
-      notes.forEach((note) => console.warn(`Seed note: ${note}`));
-    if (error) {
-      console.warn(`Seed: ${error}`);
-    } else {
-      await MenuItem.insertMany(items.map((item, order) => ({ ...item, order })), { ordered: false });
-      console.log(`Seeded ${items.length} dishes from ${file}.`);
-      if (skipped.length) {
-        console.warn(`Skipped ${skipped.length} invalid rows:`);
-        skipped.slice(0, 20).forEach((line) => console.warn(`  - ${line}`));
+  const { file, items, skipped, notes, error } = loadSeedMenu();
+  notes.forEach((note) => console.warn(`Seed note: ${note}`));
+  if (error) {
+    console.warn(`Seed: ${error}`);
+  } else {
+    const existingItems = await MenuItem.find({}, 'id category name amharicName order').lean();
+    const contentKeyOf = (item) => `${item.category}|${item.name}|${item.amharicName || ''}`.toLowerCase();
+    const existingContent = new Set(existingItems.map(contentKeyOf));
+    const usedIds = new Set(existingItems.map((item) => item.id));
+    let nextOrder = existingItems.reduce((maximum, item) => Math.max(maximum, Number(item.order) || 0), -1) + 1;
+    const missingItems = [];
+
+    items.forEach((item) => {
+      const contentKey = contentKeyOf(item);
+      if (existingContent.has(contentKey)) return;
+
+      let id = item.id;
+      let attempt = 0;
+      while (usedIds.has(id)) {
+        attempt += 1;
+        id = hashId(attempt === 1 ? contentKey : `${contentKey}|${attempt}`);
       }
+      usedIds.add(id);
+      existingContent.add(contentKey);
+      missingItems.push({ ...item, id, order: nextOrder });
+      nextOrder += 1;
+    });
+
+    if (missingItems.length) {
+      await MenuItem.insertMany(missingItems, { ordered: false });
+      console.log(`Added ${missingItems.length} missing dishes from ${file}.`);
+    }
+    if (skipped.length) {
+      console.warn(`Skipped ${skipped.length} invalid rows:`);
+      skipped.slice(0, 20).forEach((line) => console.warn(`  - ${line}`));
     }
   }
 
