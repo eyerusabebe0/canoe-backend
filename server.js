@@ -2,6 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const mongoose = require('mongoose');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+const connectDatabase = require('./config/database');
+const Category = require('./models/Category');
+const MenuItem = require('./models/MenuItem');
 
 const app = express();
 const PORT = Number(process.env.PORT || 4000);
@@ -13,6 +18,7 @@ const DEFAULT_ADMIN_CREDENTIALS = [
 
 const dataDir = path.join(__dirname, 'data');
 const dataFile = path.join(dataDir, 'store.json');
+let useLocalStore = false;
 
 const makeDefaultStore = () => ({
   categories: [],
@@ -117,6 +123,76 @@ const normalizeMenuItem = (item) => {
   return record;
 };
 
+const toMenuItem = (item) => {
+  const normalized = normalizeMenuItem(item);
+  return {
+    id: normalized.id,
+    name: normalized.name,
+    amharicName: normalized.amharicName,
+    category: normalized.category,
+    price: normalized.price,
+    description: normalized.description,
+  };
+};
+
+const getMenuItems = async () => {
+  if (useLocalStore) {
+    return readStore().menu
+      .map((item, index) => ({ ...item, order: item.order ?? index }))
+      .sort((first, second) => first.order - second.order);
+  }
+
+  return MenuItem.find().sort({ order: 1, createdAt: 1 }).lean();
+};
+
+const getCategoryNames = async () => {
+  if (useLocalStore) {
+    return readStore().categories;
+  }
+
+  return (await Category.find().sort({ order: 1, createdAt: 1 }).lean())
+    .map((category) => category.name);
+};
+
+const ensureCategory = async (name) => {
+  const normalizedName = normalizeCategory(name);
+  const key = canonicalCategoryName(normalizedName);
+  if (!key) return;
+
+  if (useLocalStore) {
+    const store = readStore();
+    if (!store.categories.some((category) => canonicalCategoryName(category) === key)) {
+      writeStore({ ...store, categories: [...store.categories, normalizedName] });
+    }
+    return;
+  }
+
+  const existing = await Category.findOne({ key });
+  if (!existing) {
+    const count = await Category.countDocuments();
+    await Category.create({ name: normalizedName, key, order: count });
+  }
+};
+
+const initializeCatalog = async () => {
+  const legacyStore = readStore();
+
+  if (await Category.countDocuments() === 0 && legacyStore.categories.length) {
+    await Category.insertMany(legacyStore.categories.map((name, order) => ({
+      name,
+      key: canonicalCategoryName(name),
+      order,
+    })));
+  }
+
+  if (await MenuItem.countDocuments() === 0 && legacyStore.menu.length) {
+    await MenuItem.insertMany(legacyStore.menu.map((item, order) => ({
+      ...normalizeMenuItem(item),
+      order,
+    })));
+  }
+};
+
 const readStore = () => {
   ensureStore();
   const raw = fs.readFileSync(dataFile, 'utf8').trim();
@@ -160,38 +236,36 @@ const isValidCustomerName = (value) => {
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
 
-app.get('/api/health', (_request, response) => {
-  response.json({ status: 'ok', message: 'Canoe backend is running.' });
+app.get('/api/health', async (_request, response) => {
+  const isConnected = mongoose.connection.readyState === 1;
+  return response.json({
+    status: 'ok',
+    database: isConnected ? 'connected' : 'disconnected',
+    storage: useLocalStore ? 'local' : 'mongodb',
+  });
 });
 
-app.get('/api/categories', (_request, response) => {
-  const store = readStore();
-  response.json({ categories: store.categories });
-});
-
-app.post('/api/categories', (request, response) => {
+app.post('/api/categories', async (request, response) => {
   const name = normalizeCategory(request.body?.name);
 
   if (!name) {
     return response.status(400).json({ message: 'Category name is required.' });
   }
 
-  const store = readStore();
   const key = canonicalCategoryName(name);
-  if (store.categories.some((category) => canonicalCategoryName(category) === key)) {
-    return response.json({ categories: store.categories, message: 'Category already exists.' });
+  const existing = useLocalStore
+    ? (await getCategoryNames()).some((category) => canonicalCategoryName(category) === key)
+    : await Category.findOne({ key });
+  if (existing) {
+    return response.json({ categories: await getCategoryNames(), message: 'Category already exists.' });
   }
 
-  const nextStore = {
-    ...store,
-    categories: [...store.categories, name],
-  };
-  writeStore(nextStore);
+  await ensureCategory(name);
 
-  return response.status(201).json({ categories: nextStore.categories, message: 'Category added successfully.' });
+  return response.status(201).json({ categories: await getCategoryNames(), message: 'Category added successfully.' });
 });
 
-app.post('/api/categories/reorder', (request, response) => {
+app.post('/api/categories/reorder', async (request, response) => {
   const order = Array.isArray(request.body?.order) ? request.body.order : [];
   const normalizedOrder = order.map((item) => normalizeCategory(item)).filter(Boolean);
 
@@ -199,9 +273,9 @@ app.post('/api/categories/reorder', (request, response) => {
     return response.status(400).json({ message: 'Category order is required.' });
   }
 
-  const store = readStore();
+  const storedCategoryNames = await getCategoryNames();
   const seen = new Set();
-  const nextCategories = [...normalizedOrder, ...store.categories.filter((category) => !normalizedOrder.some((item) => canonicalCategoryName(item) === canonicalCategoryName(category)))]
+  const nextCategories = [...normalizedOrder, ...storedCategoryNames.filter((category) => !normalizedOrder.some((item) => canonicalCategoryName(item) === canonicalCategoryName(category)))]
     .filter((category) => {
       const key = canonicalCategoryName(category);
       if (!key || seen.has(key)) {
@@ -211,38 +285,54 @@ app.post('/api/categories/reorder', (request, response) => {
       return true;
     });
 
-  const nextStore = { ...store, categories: nextCategories };
-  writeStore(nextStore);
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({ ...store, categories: nextCategories });
+  } else {
+    await Category.bulkWrite(nextCategories.map((name, order) => ({
+      updateOne: {
+        filter: { key: canonicalCategoryName(name) },
+        update: { $set: { name, order, key: canonicalCategoryName(name) } },
+        upsert: true,
+      },
+    })));
+  }
 
-  return response.json({ categories: nextStore.categories, message: 'Category order updated.' });
+  return response.json({ categories: await getCategoryNames(), message: 'Category order updated.' });
 });
 
-app.delete('/api/categories/:name', (request, response) => {
+app.delete('/api/categories/:name', async (request, response) => {
   const categoryName = decodeURIComponent(request.params.name);
-  const store = readStore();
   const normalizedCategory = canonicalCategoryName(categoryName);
 
   if (!normalizedCategory) {
     return response.status(400).json({ message: 'Category name is required.' });
   }
 
-  const remainingItems = store.menu.filter((item) => canonicalCategoryName(item.category) !== normalizedCategory);
-  const nextStore = {
-    ...store,
-    categories: store.categories.filter((category) => canonicalCategoryName(category) !== normalizedCategory),
-    menu: remainingItems,
-  };
-  writeStore(nextStore);
+  const items = await getMenuItems();
+  const itemIds = items.filter((item) => canonicalCategoryName(item.category) === normalizedCategory).map((item) => item.id);
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({
+      ...store,
+      categories: store.categories.filter((category) => canonicalCategoryName(category) !== normalizedCategory),
+      menu: store.menu.filter((item) => !itemIds.includes(item.id)),
+    });
+  } else {
+    await Promise.all([
+      Category.deleteOne({ key: normalizedCategory }),
+      MenuItem.deleteMany({ id: { $in: itemIds } }),
+    ]);
+  }
 
-  return response.json({ categories: nextStore.categories, menu: nextStore.menu, message: 'Category deleted successfully.' });
+  return response.json({ categories: await getCategoryNames(), menu: (await getMenuItems()).map(toMenuItem), message: 'Category deleted successfully.' });
 });
 
-app.get('/api/menu', (_request, response) => {
-  const store = readStore();
-  response.json({ menu: store.menu.map(normalizeMenuItem), categories: store.categories });
+app.get('/api/menu', async (_request, response) => {
+  response.json({ menu: (await getMenuItems()).map(toMenuItem), categories: await getCategoryNames() });
 });
 
-app.post('/api/menu', (request, response) => {
+app.post('/api/menu', async (request, response) => {
   const { name, amharicName, category, price, description } = request.body || {};
   const cleanedName = String(name || '').trim();
   const cleanedAmharicName = String(amharicName || '').trim();
@@ -258,7 +348,6 @@ app.post('/api/menu', (request, response) => {
     return response.status(400).json({ message: 'At least one name (English or Amharic) and price are required.' });
   }
 
-  const store = readStore();
   const item = normalizeMenuItem({
     id: `item-${Date.now()}-${Math.random().toString(16).slice(2, 8)}`,
     name: cleanedName,
@@ -268,81 +357,100 @@ app.post('/api/menu', (request, response) => {
     description: cleanedDescription,
   });
 
-  const nextCategories = [...new Set([...store.categories, cleanedCategory])];
-  const nextStore = {
-    ...store,
-    categories: nextCategories,
-    menu: [...store.menu, item],
-  };
-
-  writeStore(nextStore);
-  return response.status(201).json({ item, menu: nextStore.menu, categories: nextStore.categories, message: 'Menu item added successfully.' });
+  const existingItems = await getMenuItems();
+  const order = existingItems.length;
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({ ...store, menu: [...store.menu, { ...item, order }] });
+  } else {
+    await MenuItem.create({ ...item, order });
+  }
+  await ensureCategory(cleanedCategory);
+  return response.status(201).json({ item: toMenuItem(item), menu: (await getMenuItems()).map(toMenuItem), categories: await getCategoryNames(), message: 'Menu item added successfully.' });
 });
 
-app.put('/api/menu/:id', (request, response) => {
+app.put('/api/menu/:id', async (request, response) => {
   const itemId = request.params.id;
   const { name, amharicName, category, price, description } = request.body || {};
 
-  const store = readStore();
-  const itemIndex = store.menu.findIndex((item) => String(item.id) === String(itemId));
-
-  if (itemIndex === -1) {
+  const existingItem = useLocalStore
+    ? (await getMenuItems()).find((item) => String(item.id) === String(itemId))
+    : await MenuItem.findOne({ id: itemId }).lean();
+  if (!existingItem) {
     return response.status(404).json({ message: 'Menu item not found.' });
   }
 
   const updatedItem = normalizeMenuItem({
-    ...store.menu[itemIndex],
-    name: String(name ?? store.menu[itemIndex].name ?? '').trim(),
-    amharicName: String(amharicName ?? store.menu[itemIndex].amharicName ?? '').trim(),
-    category: normalizeCategory(category || store.menu[itemIndex].category),
-    price: String(price ?? store.menu[itemIndex].price).trim(),
-    description: String(description ?? store.menu[itemIndex].description ?? '').trim(),
+    ...existingItem,
+    name: String(name ?? existingItem.name ?? '').trim(),
+    amharicName: String(amharicName ?? existingItem.amharicName ?? '').trim(),
+    category: normalizeCategory(category || existingItem.category),
+    price: String(price ?? existingItem.price).trim(),
+    description: String(description ?? existingItem.description ?? '').trim(),
   });
 
   if ((!updatedItem.name && !updatedItem.amharicName) || !updatedItem.price) {
     return response.status(400).json({ message: 'At least one name (English or Amharic) and price are required.' });
   }
 
-  const nextMenu = [...store.menu];
-  nextMenu[itemIndex] = updatedItem;
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({
+      ...store,
+      menu: store.menu.map((item) => String(item.id) === String(itemId) ? { ...item, ...updatedItem } : item),
+    });
+  } else {
+    await MenuItem.updateOne({ id: itemId }, {
+      $set: {
+        name: updatedItem.name,
+        amharicName: updatedItem.amharicName,
+        category: updatedItem.category,
+        price: updatedItem.price,
+        description: updatedItem.description,
+      },
+    });
+  }
+  await ensureCategory(updatedItem.category);
 
-  const nextCategories = [...new Set([...store.categories, updatedItem.category])];
-  const nextStore = { ...store, menu: nextMenu, categories: nextCategories };
-  writeStore(nextStore);
-
-  return response.json({ item: updatedItem, menu: nextStore.menu, categories: nextStore.categories, message: 'Menu item updated.' });
+  return response.json({ item: toMenuItem(updatedItem), menu: (await getMenuItems()).map(toMenuItem), categories: await getCategoryNames(), message: 'Menu item updated.' });
 });
 
-app.post('/api/menu/reorder', (request, response) => {
+app.post('/api/menu/reorder', async (request, response) => {
   const order = Array.isArray(request.body?.order) ? request.body.order : [];
 
   if (!order.length) {
     return response.status(400).json({ message: 'Order list is required.' });
   }
 
-  const store = readStore();
-  const itemMap = new Map(store.menu.map((item) => [String(item.id), item]));
-  const nextMenu = order
-    .map((id) => itemMap.get(String(id)))
-    .filter(Boolean);
+  const items = await getMenuItems();
+  const itemMap = new Map(items.map((item) => [String(item.id), item]));
+  const nextMenu = order.map((id) => itemMap.get(String(id))).filter(Boolean);
 
-  if (nextMenu.length !== store.menu.length) {
+  if (nextMenu.length !== items.length) {
     return response.status(400).json({ message: 'Menu order could not be restored.' });
   }
 
-  const nextStore = { ...store, menu: nextMenu };
-  writeStore(nextStore);
-  return response.json({ menu: nextMenu, message: 'Menu order updated.' });
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({ ...store, menu: nextMenu.map((item, orderIndex) => ({ ...item, order: orderIndex })) });
+  } else {
+    await MenuItem.bulkWrite(nextMenu.map((item, orderIndex) => ({
+      updateOne: { filter: { id: item.id }, update: { $set: { order: orderIndex } } },
+    })));
+  }
+  return response.json({ menu: nextMenu.map(toMenuItem), message: 'Menu order updated.' });
 });
 
-app.delete('/api/menu/:id', (request, response) => {
+app.delete('/api/menu/:id', async (request, response) => {
   const itemId = request.params.id;
-  const store = readStore();
-  const nextMenu = store.menu.filter((item) => String(item.id) !== String(itemId));
-  const nextStore = { ...store, menu: nextMenu };
-  writeStore(nextStore);
+  if (useLocalStore) {
+    const store = readStore();
+    writeStore({ ...store, menu: store.menu.filter((item) => String(item.id) !== String(itemId)) });
+  } else {
+    await MenuItem.deleteOne({ id: itemId });
+  }
 
-  return response.json({ menu: nextStore.menu, message: 'Menu item deleted.' });
+  return response.json({ menu: (await getMenuItems()).map(toMenuItem), message: 'Menu item deleted.' });
 });
 
 app.get('/api/comments', (_request, response) => {
@@ -452,6 +560,21 @@ app.post('/api/admin/change-credentials', (request, response) => {
   return response.json({ success: true, message: 'Admin credentials updated successfully.' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Canoe backend running at http://localhost:${PORT}`);
+const startServer = async () => {
+  try {
+    await connectDatabase();
+    await initializeCatalog();
+  } catch (error) {
+    useLocalStore = true;
+    console.warn(`MongoDB unavailable; using ${path.relative(__dirname, dataFile)} for local data: ${error.message}`);
+  }
+
+  app.listen(PORT, () => {
+    console.log(`Backend is running on port ${PORT} (http://localhost:${PORT}) using ${useLocalStore ? 'local JSON storage' : 'MongoDB'}.`);
+  });
+};
+
+startServer().catch((error) => {
+  console.error('Backend startup failed:', error.message);
+  process.exit(1);
 });
