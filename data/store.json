@@ -2,11 +2,11 @@
   "categories": [
     "ቁርስ / Breakfast",
     "የጾም ምግቦች / Fasting Foods",
-    "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+    "የፍስክ ምግቦች / Non-Fasting Foods",
     "በርገር / Burger",
     "ኑድል / Noodles",
     "ፒዛ / Pizza",
-    "መክሰስ / Snack",
+    "ስናክ / Snack",
     "ዓሳ / Fish",
     "ጭማቂ / Juice",
     "ሰላጣ / Salad",
@@ -16,8 +16,8 @@
     "ቀዝቃዛ መጠጦች / Cold Drinks",
     "ትኩስ መጠጦች / Hot Drinks",
     "ክሬም ኬክ / Cream Cake",
-    "ካኖ ስፔሻል ኬክ / Canoe Special Cake",
-    "ካኖ ስፔሻል ቶርታ ኬክ / Canoe Special Torta Cake",
+    "ካኑ ስፔሻል ኬክ / Canoe Special Cake",
+    "ካኑ ስፔሻል ቶርታ ኬክ / Canoe Special Torta Cake",
     "ቶርታ ኬክ / Torta Cake",
     "ኩኪስ / Cookies",
     "ኬክ በካፕ / Dessert Cup",
@@ -455,7 +455,7 @@
       "id": "item-25",
       "name": "Canee Special",
       "amharicName": "ካኔ ስፔሻል",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "1450",
       "description": "",
       "order": 47
@@ -464,7 +464,7 @@
       "id": "item-26",
       "name": "Menchet",
       "amharicName": "መንቼት",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "400",
       "description": "",
       "order": 48
@@ -473,7 +473,7 @@
       "id": "item-27",
       "name": "Sheep Tibs",
       "amharicName": "የበግ ጥብስ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "550",
       "description": "",
       "order": 49
@@ -482,7 +482,7 @@
       "id": "item-28",
       "name": "Special Tibs",
       "amharicName": "ስፔሻል ጥብስ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "600",
       "description": "",
       "order": 50
@@ -491,7 +491,7 @@
       "id": "item-29",
       "name": "Tibs Firfir",
       "amharicName": "ጥብስ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "490",
       "description": "",
       "order": 51
@@ -500,7 +500,7 @@
       "id": "item-30",
       "name": "Special Tibs Firfir",
       "amharicName": "ስፔሻል ጥብስ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "530",
       "description": "",
       "order": 52
@@ -509,7 +509,7 @@
       "id": "item-31",
       "name": "Dulet",
       "amharicName": "ዱሌት",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "390",
       "description": "",
       "order": 53
@@ -518,7 +518,7 @@
       "id": "item-32",
       "name": "Kitfo",
       "amharicName": "ክትፎ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "650",
       "description": "",
       "order": 54
@@ -527,7 +527,7 @@
       "id": "item-33",
       "name": "Special Kitfo",
       "amharicName": "ስፔሻል ክትፎ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "750",
       "description": "",
       "order": 55
@@ -536,7 +536,7 @@
       "id": "item-34",
       "name": "Meat Firfir",
       "amharicName": "የስጋ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "350",
       "description": "",
       "order": 56
@@ -545,7 +545,7 @@
       "id": "item-35",
       "name": "Special Meat Firfir",
       "amharicName": "ስፔሻል የስጋ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "390",
       "description": "",
       "order": 57
@@ -554,7 +554,7 @@
       "id": "item-36",
       "name": "Dirkosh Firfir",
       "amharicName": "ድርቆሽ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "350",
       "description": "",
       "order": 58
@@ -563,7 +563,7 @@
       "id": "item-37",
       "name": "Dirkosh firfir with Kwanta",
       "amharicName": "ድርቆሽ ፍርፍር በቋንጣ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "370",
       "description": "",
       "order": 59
@@ -572,7 +572,7 @@
       "id": "item-38",
       "name": "Spageti With Meat",
       "amharicName": "ፓስታ በስጋ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "320",
       "description": "",
       "order": 60
@@ -581,7 +581,7 @@
       "id": "item-39",
       "name": "Rice With Meat",
       "amharicName": "ሩዝ በስጋ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "320",
       "description": "",
       "order": 61
@@ -590,7 +590,7 @@
       "id": "item-40",
       "name": "Shiro Bozena",
       "amharicName": "ሽሮ ቦዜና",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "290",
       "description": "",
       "order": 62
@@ -599,7 +599,7 @@
       "id": "item-41",
       "name": "Gomen With Meat",
       "amharicName": "ጎመን በስጋ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "320",
       "description": "",
       "order": 63
@@ -608,7 +608,7 @@
       "id": "item-42",
       "name": "Qwanta Firfir",
       "amharicName": "ቋንጣ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "370",
       "description": "",
       "order": 64
@@ -617,7 +617,7 @@
       "id": "item-43",
       "name": "S. Qwanta firfir",
       "amharicName": "ስፔሻል ቋንጣ ፍርፍር",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "450",
       "description": "",
       "order": 65
@@ -626,7 +626,7 @@
       "id": "item-44",
       "name": "Grill Tibis",
       "amharicName": "ግሪል ጥብስ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "550",
       "description": "",
       "order": 66
@@ -635,7 +635,7 @@
       "id": "item-45",
       "name": "Spageti With Karboran",
       "amharicName": "ፓስታ ካርቦናራ",
-      "category": "የጾም ያልሆኑ ምግቦች / Non-Fasting Foods",
+      "category": "የፍስክ ምግቦች / Non-Fasting Foods",
       "price": "395",
       "description": "",
       "order": 67
@@ -716,7 +716,7 @@
       "id": "seed-c2ebe90d5a93",
       "name": "Special Club Sandwich",
       "amharicName": "ስፔሻል ክለብ ሳንድዊች",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "520",
       "description": "",
       "order": 76
@@ -725,7 +725,7 @@
       "id": "seed-84b88f098e20",
       "name": "Club Sandwich",
       "amharicName": "ክለብ ሳንድዊች",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "480",
       "description": "",
       "order": 77
@@ -734,7 +734,7 @@
       "id": "seed-4ace69c63800",
       "name": "Vegitable Sandwich",
       "amharicName": "የአትክልት ሳንድዊች",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "210",
       "description": "",
       "order": 78
@@ -743,7 +743,7 @@
       "id": "seed-8167b0b06d3e",
       "name": "Tuna Sandwich",
       "amharicName": "ቱና ሳንድዊች",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "420",
       "description": "",
       "order": 79
@@ -752,7 +752,7 @@
       "id": "seed-1eb3a576832a",
       "name": "Chicken Rap",
       "amharicName": "ቺክን ራፕ",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "480",
       "description": "",
       "order": 80
@@ -761,7 +761,7 @@
       "id": "seed-07274981727e",
       "name": "Vegitable Rap",
       "amharicName": "የአትክልት ራፕ",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "290",
       "description": "",
       "order": 81
@@ -770,7 +770,7 @@
       "id": "seed-7423d976d6bd",
       "name": "Beef Rap",
       "amharicName": "ቢፍ ራፕ",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "420",
       "description": "",
       "order": 82
@@ -779,7 +779,7 @@
       "id": "seed-3669d81f2884",
       "name": "French Fries",
       "amharicName": "ፍሬንች ፍራይስ",
-      "category": "መክሰስ / Snack",
+      "category": "ስናክ / Snack",
       "price": "250",
       "description": "",
       "order": 83
